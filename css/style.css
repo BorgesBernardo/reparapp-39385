@@ -43,6 +43,7 @@ header h1{
     flex-direction: row;
     align-items: flex-end;
     gap: 10px;
+    font-size: 20px;
 }
 
 .navbar li a{
@@ -86,10 +87,11 @@ header h1{
     margin: 20px 20px;
     font-family: 'Roboto', sans-serif;
     font-size: 15px;
+    flex-wrap: wrap;
 }
 
 .profesional section img{
-    width: 100px;
+    width: 150px;
 }
 
 .profesional section{
@@ -512,6 +514,58 @@ header h1{
 
 
 /* ------------------------------- TERMINA PERFIL  ---------------------- */
+
+
+@media(max-width:1086px){
+    .datafiscal{
+        padding-left: 100px;
+    }
+}
+
+@media(max-width:906px){
+    .datafiscal{
+        padding-left: 100px;
+    }
+}
+
+
+@media(max-width:1024px){
+    .datafiscal{
+        padding-left: 100px;
+    }
+}
+
+
+@media(max-width:768px){
+    .social_orden{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 5px;
+    }
+    .datafiscal{
+        padding-left: 20px;
+        align-self: center;
+    }
+    .ubication{
+        display: flex;
+        flex-direction: column;
+    }
+    .navbar_footer{
+        gap: 15px;
+        padding-left: 20px;
+        font-size: 15px;
+    }
+
+
+@media(max-width:650px){
+    
+    }
+
+}
+
+
+
 
 
 
