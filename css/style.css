@@ -239,8 +239,8 @@ nav #toggle, nav label{
 
 .main_servicios{
     display: grid;
-    grid-template-columns: repeat(6, 1fr );
-    grid-template-rows: repeat(6, 80px); 
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr); 
 }
 
 .main_servicios h2{
@@ -250,7 +250,7 @@ nav #toggle, nav label{
 }
 
 .main_servicios h2{
-    grid-column: 1 / 7;
+    grid-column: 1 / 1;
     grid-row: 1 / 2;
     justify-content: center;
 }
@@ -258,11 +258,12 @@ nav #toggle, nav label{
 .servicios_lista{
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     gap: 20px;
 }
 
 .servicios_lista{
-    grid-column: 1 / 7;
+    grid-column: 1 / 1;
     grid-row: 2 / 4;
     justify-self: center;
     align-self: center;
@@ -274,7 +275,7 @@ nav #toggle, nav label{
 }
 
 .section2service{
-    grid-column: 1 / 7 ;
+    grid-column: 1 / 1 ;
     grid-row: 4 / 5;
     font-size: 20px;
     text-align: center;
@@ -284,13 +285,16 @@ nav #toggle, nav label{
 }
 
 .boton_descarga{
-    grid-column: 1 / 7 ;
+    grid-column: 1 / 1 ;
     grid-row: 5 / 6;
-    justify-self: center;
-    align-self: center;
     color: black;
     background-color: yellow;
     border-radius: 20px;
+    width: 60%;
+}
+
+.boton{
+    justify-self: center;
 }
 
 .boton_descarga h3{
@@ -458,7 +462,7 @@ nav #toggle, nav label{
     text-align: center;
     padding: 20px ;
     background-color: #f9b812;
-    margin: 40px 80px;
+    margin: 5% 20%;
     font-size: 24px;
 }
 
@@ -546,6 +550,40 @@ nav #toggle, nav label{
 }
 
 
+
+
+@media(max-width:860px){
+    .main_perfil{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows:repeat(7, 1fr);
+}
+
+.foto_perfil{
+    grid-column: 1 / 1;
+    grid-row: 1 / 4;
+    justify-self: center;
+}
+
+.datos_perfil{
+    grid-column: 1 / 1;
+    grid-row: 4 / 5;
+    justify-self: center;
+}
+
+.cerrar_sesion{
+    grid-column: 1 / 1;
+    grid-row: 5 / 6;
+    justify-self: center;
+}
+.cerrar_sesion p{
+    margin: 10px 0px;
+}
+}
+
+
+
+
 @media(max-width:768px){
     .social_orden{
         display: flex;
@@ -566,6 +604,28 @@ nav #toggle, nav label{
         padding-left: 20px;
         font-size: 15px;
     }
+    .servicios_lista{
+        justify-content: center;
+    }
+    .section2service{
+        align-self: center;
+    }
+    .main_nosotros{
+        margin-top: 5%;
+    }
+    .titulo_nosotros{
+        text-align: center;
+    }
+    .subtitulo{
+        text-align: center;
+    }
+    .texto_principal{
+        text-align: center;
+    }
+
+
+
+
 }
 
 @media(max-width:650px){
@@ -615,6 +675,17 @@ nav #toggle, nav label{
     }
 }
 
+@media(max-width: 450px){
+    .main_servicios h2{
+        align-self: center;
+    }
+
+
+    .section2service{
+        margin: 20px 0px;
+    }
+}
+
 @media(max-width:390px){
     .titulo_index{
         text-align: center;
@@ -656,18 +727,5 @@ nav #toggle, nav label{
         grid-column: 1 / 1;
         grid-row: 4 / 5;
     }
-
-
-
-
-
-
-
-
-
-}
-
-@media(max-width: 320){
-
 }
 
