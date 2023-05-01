@@ -284,18 +284,23 @@ nav #toggle, nav label{
     padding-bottom: 0px;
 }
 
-.boton_descarga{
+.boton{
     grid-column: 1 / 1 ;
     grid-row: 5 / 6;
     color: black;
-    background-color: yellow;
+    background-color: #f9b812;
     border-radius: 20px;
-    width: 60%;
+    justify-self: center;
+    align-items: center;
+    text-align: center;
+    width: auto;
+    margin-bottom: 20px;
+    padding: 10px 10px;
 }
 
-.boton{
+/*.boton{
     justify-self: center;
-}
+}*/
 
 .boton_descarga h3{
     font-size: 30px;
@@ -457,7 +462,7 @@ nav #toggle, nav label{
     font-family: 'Roboto', sans-serif;
 }
 
-.boton_descarga{
+.boton_descarga_nosotros{
     font-weight: bold;
     text-align: center;
     padding: 20px ;
@@ -499,7 +504,7 @@ nav #toggle, nav label{
 }
 
 .foto_perfil img{
-    width: 400px;
+    width: 100%;
 }
 
 .datos{
@@ -536,52 +541,38 @@ nav #toggle, nav label{
     }
 }
 
-@media(max-width:906px){
-    .datafiscal{
-        padding-left: 100px;
-    }
-}
 
 
 @media(max-width:1024px){
     .datafiscal{
         padding-left: 100px;
     }
+
 }
 
 
+@media(max-width:906px){
+    .datafiscal{
+        padding-left: 100px;
+    }
+    .main_perfil{
+        display: flex;
+        flex-direction: column;
+    }
+    .datos_perfil{
+        padding-left: 7%;
+    }
+    .cerrar_sesion{
+        margin: 40px 0px;
+    }
+}
 
 
 @media(max-width:860px){
-    .main_perfil{
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows:repeat(7, 1fr);
-}
-
-.foto_perfil{
-    grid-column: 1 / 1;
-    grid-row: 1 / 4;
-    justify-self: center;
-}
-
-.datos_perfil{
-    grid-column: 1 / 1;
-    grid-row: 4 / 5;
-    justify-self: center;
-}
-
-.cerrar_sesion{
-    grid-column: 1 / 1;
-    grid-row: 5 / 6;
-    justify-self: center;
-}
 .cerrar_sesion p{
     margin: 10px 0px;
 }
 }
-
-
 
 
 @media(max-width:768px){
@@ -622,10 +613,6 @@ nav #toggle, nav label{
     .texto_principal{
         text-align: center;
     }
-
-
-
-
 }
 
 @media(max-width:650px){
@@ -634,13 +621,11 @@ nav #toggle, nav label{
             height: 0;
             overflow: hidden;
         }
-        
         .menu ul{
             flex-direction: column;
             align-items: center;
             /*padding: 0.5rem 0;*/
         }
-    
         nav label{
             display: inline-flex;
             color: white;
@@ -649,7 +634,6 @@ nav #toggle, nav label{
         nav #toggle:checked ~ .menu{
             height: 100%;
         }
-
         .nav_img{
             padding-left: 50px;
         } 
@@ -679,8 +663,6 @@ nav #toggle, nav label{
     .main_servicios h2{
         align-self: center;
     }
-
-
     .section2service{
         margin: 20px 0px;
     }
@@ -691,18 +673,17 @@ nav #toggle, nav label{
         text-align: center;
     }
 }
+
 @media(max-width: 375px){
     .profesional{
         width: 200px;
     }
-
     .navbar_footer{
         flex-direction: row;
         flex-wrap: wrap;
         padding: 0px 50px;
         justify-content: center;
     }
-
     .footer_section{
         display: grid;
         grid-template-columns: 1fr;
