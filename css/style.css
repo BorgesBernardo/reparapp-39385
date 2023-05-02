@@ -282,7 +282,7 @@ nav #toggle, nav label{
 .boton{
     grid-column: 1 / 1 ;
     grid-row: 5 / 6;
-    color: black;
+    color: #012935;
     background-color: #f9b812;
     border-radius: 20px;
     justify-self: center;
@@ -290,7 +290,7 @@ nav #toggle, nav label{
     text-align: center;
     width: auto;
     margin-bottom: 20px;
-    padding: 10px 10px;
+    padding: 15px 15px;
 }
 
 /*.boton{
@@ -354,6 +354,10 @@ nav #toggle, nav label{
 
 .whatsapp img{
     width: 70px;
+}
+
+.whatsapp p{
+    text-decoration: none;
 }
 
 .email{
@@ -467,6 +471,7 @@ nav #toggle, nav label{
     background-color: #f9b812;
     margin: 5% 20%;
     font-size: 24px;
+    border-radius: 20px;
 }
 
 /* ------------------------------- TERMINA NOSOTROS  ---------------------- */
@@ -480,6 +485,10 @@ nav #toggle, nav label{
     display: grid;
     grid-template-columns: auto 1fr;
     grid-template-rows: repeat(4, 25%);
+}
+
+.main_perfil{
+    font-family: 'Roboto', sans-serif;
 }
 
 .foto_perfil{
@@ -501,6 +510,10 @@ nav #toggle, nav label{
     justify-content: center;
 }
 
+.datos_perfil{
+    text-decoration: none;
+}
+
 .foto_perfil img{
     width: 100%;
 }
@@ -519,6 +532,7 @@ nav #toggle, nav label{
 
 .cerrar_sesion{
     background-color: #f9b812;
+    color: #012935;
     width: 180px;
     padding: 5px 0px;
     font-size: 25px;
@@ -654,6 +668,13 @@ nav #toggle, nav label{
     .datafiscal{
         grid-column: 2 / 3;
         grid-row: 2 / 3;
+    }
+    .section2service{
+        padding: 0px 10px;
+        margin: 10px 0px;
+    }
+    .boton{
+        margin: 20px 0px;
     }
 }
 
