@@ -1,0 +1,55 @@
+/* ------ comienza header index ----- */ 
+
+.main_navbar{
+    h1{
+        font-family: 'Secular One', sans-serif;
+    }
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px auto;
+    padding: 1rem;
+    width: 100%;
+}
+
+nav #toggle, nav label{
+    display: none;
+}
+
+.reparapp{
+    b{
+        color: #f9b812;
+        font-weight: bold;
+    }
+}
+
+.navbar{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    gap: 10px;
+    font-size: 20px;
+    li{
+        a{
+            text-decoration: none;
+            color: white;
+            font-family: 'Roboto', sans-serif;
+        }
+    }
+    .selectionbottom {
+        color: #f9b812;
+        font-family: 'Roboto', sans-serif;
+    }
+}
+
+.foto_portada{
+    img{
+        width: 100%;
+    }
+}
+
+/* ------ termina header index ----- */ 
+
+/* ------ comienza header  ----- */ 

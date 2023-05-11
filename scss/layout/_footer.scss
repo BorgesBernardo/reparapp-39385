@@ -1,0 +1,105 @@
+/* -------- Comienza el Footer ----- */
+
+.footer_section{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr;
+    background-color: $background-footer;
+    padding: 10px;
+}
+
+.navbar_footer_main{
+    grid-column: 1 / 1;
+    align-self: center;
+}
+
+.navbar_footer{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding-left: 20px;
+    list-style: none;
+    li{
+        a{
+            text-decoration: none;
+            color: white;
+            font-size: 20px;
+            font-family: 'Roboto', sans-serif;
+        }
+    }
+    .selectionbotton{
+        color:$color-selectiontext;
+        font-family: 'Roboto', sans-serif;
+    }
+}
+
+.ubication{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    font-size: 20px;
+    p{
+        font-family: 'Roboto', sans-serif;
+    }
+    img{
+        width: 40px;
+    }
+    font-family: 'Roboto', sans-serif;
+    grid-column: 2 / 3;
+    justify-self: center;
+    align-self: center;
+}
+
+.social_orden{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+    a{
+        text-decoration: none;
+    }
+    .instagram{
+        a{
+            img{
+                width: 50px;
+            }
+        }
+    }
+    .whatsapp{
+        a{
+            img{
+                width: 65px;
+            }
+        }
+    }
+    .facebook{
+        a{
+            img{
+                width: 45px;
+            }
+        }
+    }
+}
+
+.social{
+    grid-column: 3 / 4;
+    justify-self: center;
+    align-self: center;
+}
+
+.datafiscal{
+    display: flex;
+    flex-direction: column;
+    font-family: 'Roboto', sans-serif;
+    justify-content: flex-end;
+    a{
+        list-style: none;
+        text-decoration: none;
+        color: white;
+    }
+    grid-column: 4 / 5;
+    justify-self: center;
+    padding-left: 130px;
+}

@@ -1,0 +1,36 @@
+/* -------- Comienza Main Index --------*/
+
+.titulo_index{
+    font-family: 'Secular One', sans-serif;
+    margin: 20px 20px;
+}
+
+.main_index{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr;
+}
+
+.profesionales_lista{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    justify-content: center;
+    align-content: center;
+    margin: 20px 20px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    flex-wrap: wrap;
+    .profesional{
+        section{
+            text-align: center;
+            gap: 10px;
+            img{
+                width: 150px;
+            }
+        }
+    }
+}
+
+/* -------- Termina Main Index --------*/
+
