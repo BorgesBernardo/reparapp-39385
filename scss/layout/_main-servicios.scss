@@ -1,0 +1,61 @@
+.main_servicios{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr); 
+    h2{
+        font-size: 30px;
+        text-align: center;
+        margin: 30px 0px 20px 0px;
+        grid-column: 1 / 1;
+        grid-row: 1 / 2;
+        justify-content: center;
+    }
+    .section2service{
+        grid-column: 1 / 1 ;
+        grid-row: 4 / 5;
+        font-size: 20px;
+        text-align: center;
+        justify-self: center;
+        align-self: flex-start;
+        padding-bottom: 0px;
+    }
+    .boton{
+        grid-column: 1 / 1 ;
+        grid-row: 5 / 6;
+        color: #012935;
+        background-color: #f9b812;
+        border-radius: 20px;
+        justify-self: center;
+        align-items: center;
+        text-align: center;
+        width: auto;
+        margin-bottom: 20px;
+        padding: 15px 15px;
+    }
+    .boton{
+        .boton_descarga{
+            h3{
+                font-size: 30px;
+            }
+        }
+    }
+}
+
+.servicios_lista{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+    grid-column: 1 / 1;
+    grid-row: 2 / 4;
+    justify-self: center;
+    align-self: center;
+    margin-top: 0px;
+    div{
+        section{
+            img{
+                width: 100px;
+            }
+        }
+    }
+}

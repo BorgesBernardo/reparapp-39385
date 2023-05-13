@@ -93,6 +93,192 @@ nav #toggle, nav label {
 }
 
 /* -------- Termina Main Index --------*/
+.main_servicios {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(4, 1fr);
+}
+.main_servicios h2 {
+  font-size: 30px;
+  text-align: center;
+  margin: 30px 0px 20px 0px;
+  grid-column: 1/1;
+  grid-row: 1/2;
+  justify-content: center;
+}
+.main_servicios .section2service {
+  grid-column: 1/1;
+  grid-row: 4/5;
+  font-size: 20px;
+  text-align: center;
+  justify-self: center;
+  align-self: flex-start;
+  padding-bottom: 0px;
+}
+.main_servicios .boton {
+  grid-column: 1/1;
+  grid-row: 5/6;
+  color: #012935;
+  background-color: #f9b812;
+  border-radius: 20px;
+  justify-self: center;
+  align-items: center;
+  text-align: center;
+  width: auto;
+  margin-bottom: 20px;
+  padding: 15px 15px;
+}
+.main_servicios .boton .boton_descarga h3 {
+  font-size: 30px;
+}
+
+.servicios_lista {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 20px;
+  grid-column: 1/1;
+  grid-row: 2/4;
+  justify-self: center;
+  align-self: center;
+  margin-top: 0px;
+}
+.servicios_lista div section img {
+  width: 100px;
+}
+
+.main_contacto main h2 {
+  font-size: 30px;
+  padding: 20px 20px;
+}
+
+.datos_contacto {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 20px 20px;
+  font-family: "Roboto", sans-serif;
+  font-size: 25px;
+}
+.datos_contacto .whatsapp {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.datos_contacto .whatsapp p {
+  padding-top: 12px;
+  padding-left: 10px;
+  text-decoration: none;
+}
+.datos_contacto .whatsapp img {
+  width: 70px;
+}
+.datos_contacto .email {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.datos_contacto .email p {
+  padding-top: 12px;
+  padding-left: 10px;
+}
+.datos_contacto .email img {
+  padding-bottom: 2px;
+  width: 70px;
+}
+.datos_contacto .instagram {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.datos_contacto .instagram p {
+  padding-top: 12px;
+  padding-left: 15px;
+}
+.datos_contacto .instagram img {
+  width: 60px;
+}
+
+.main_nosotros .titulo_nosotros {
+  padding: 10px 20px;
+  margin: 10px 0px;
+  font-size: 30px;
+  font-family: "Secular One", sans-serif;
+}
+.main_nosotros section .subtitulo {
+  padding-left: 20px;
+  padding-top: 10px;
+  margin: 20px;
+  font-size: 20px;
+  font-family: "Roboto", sans-serif;
+  color: #f9b812;
+}
+.main_nosotros section .texto_principal {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin: 40px 14px;
+  padding: 0px 15px;
+  font-size: 18px;
+  font-family: "Roboto", sans-serif;
+}
+.main_nosotros section .boton_descarga_nosotros {
+  font-weight: bold;
+  text-align: center;
+  padding: 20px 0px;
+  background-color: #f9b812;
+  margin: 5% 20%;
+  font-size: 24px;
+  border-radius: 20px;
+}
+
+.main_perfil {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-template-rows: repeat(4, 25%);
+  font-family: "Roboto", sans-serif;
+}
+.main_perfil .foto_perfil {
+  grid-column: 1/2;
+  grid-row: 1/5;
+  padding: 20px 60px;
+}
+.main_perfil .foto_perfil img {
+  width: 100%;
+}
+.main_perfil .datos_perfil {
+  display: flex;
+  flex-direction: column;
+  font-size: 20px;
+  gap: 20px;
+}
+.main_perfil .cerrar_sesion {
+  grid-column: 2/3;
+  grid-row: 3/5;
+  align-self: center;
+  margin-bottom: 190px;
+  background-color: #f9b812;
+  color: #012935;
+  width: 180px;
+  padding: 5px 0px;
+  font-size: 25px;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.datos_perfil {
+  grid-column: 2/3;
+  grid-row: 1/4;
+  justify-content: center;
+  text-decoration: none;
+}
+.datos_perfil .datos {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
 /* -------- Comienza el Footer ----- */
 .footer_section {
   display: grid;
@@ -183,5 +369,7 @@ nav #toggle, nav label {
   text-decoration: none;
   color: white;
 }
+
+/* -------- Termina el Footer ----- */
 
 /*# sourceMappingURL=style.css.map */

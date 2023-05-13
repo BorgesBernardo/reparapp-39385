@@ -302,11 +302,11 @@ nav #toggle, nav label{
 }
 
 
-.footer_servicios{
+/*.footer_servicios{
     grid-column: 1 / 1;
     grid-row: 3 / 4;
     align-self: self-end;
-}
+}*/
 
 /* Termina el Header */
 
