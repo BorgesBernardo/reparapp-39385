@@ -19,11 +19,11 @@
     }
     .cerrar_sesion{
         grid-column: 2 / 3;
-        grid-row: 3 / 5;
+        grid-row: 3 / 4;
         align-self: center;
-        margin-bottom: 190px;
-        background-color: #f9b812;
-        color: #012935;
+        margin-bottom: 30px;
+        background-color: $color-botones;
+        color: $background-sitio;
         width: 180px;
         padding: 5px 0px;
         font-size: 25px;

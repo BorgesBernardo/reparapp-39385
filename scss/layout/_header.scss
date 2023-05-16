@@ -19,7 +19,7 @@ nav #toggle, nav label{
 
 .reparapp{
     b{
-        color: #f9b812;
+        color: $color-selectiontext;
         font-weight: bold;
     }
 }
@@ -34,12 +34,12 @@ nav #toggle, nav label{
     li{
         a{
             text-decoration: none;
-            color: white;
+            color: $color-texto;
             font-family: 'Roboto', sans-serif;
         }
     }
     .selectionbottom {
-        color: #f9b812;
+        color: $color-botones;
         font-family: 'Roboto', sans-serif;
     }
 }

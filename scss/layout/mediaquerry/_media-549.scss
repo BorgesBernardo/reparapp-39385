@@ -1,0 +1,28 @@
+@media(max-width: 549px){
+    .footer_section{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
+    .social_orden{
+        flex-direction: row;
+    }
+    .social{
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
+    }
+    .datafiscal{
+        grid-column: 2 / 3;
+        grid-row: 2 / 3;
+    }
+    .section2service{
+        padding: 0px 10px;
+        margin: 10px 0px;
+    }
+    .boton{
+        margin: 20px 0px;
+    }
+    .boton_descarga_nosotros{
+        margin: 5% 8%;
+    }
+}

@@ -118,18 +118,22 @@ nav #toggle, nav label {
 .main_servicios .boton {
   grid-column: 1/1;
   grid-row: 5/6;
-  color: #012935;
-  background-color: #f9b812;
-  border-radius: 20px;
   justify-self: center;
   align-items: center;
   text-align: center;
+}
+.main_servicios .boton .boton_descarga button {
+  font-size: 20px;
+  background-color: #f9b812;
+  border-style: none;
+  border-radius: 20px;
   width: auto;
   margin-bottom: 20px;
   padding: 15px 15px;
 }
-.main_servicios .boton .boton_descarga h3 {
-  font-size: 30px;
+.main_servicios .boton .boton_descarga .button:hover {
+  transform: scale(1.1);
+  box-shadow: 2px 2px 30px rgba(255, 255, 255, 0.377);
 }
 
 .servicios_lista {
@@ -227,11 +231,18 @@ nav #toggle, nav label {
 .main_nosotros section .boton_descarga_nosotros {
   font-weight: bold;
   text-align: center;
-  padding: 20px 0px;
   background-color: #f9b812;
-  margin: 5% 20%;
+  margin: 20px 20%;
   font-size: 24px;
+  border-style: none;
   border-radius: 20px;
+  width: auto;
+  padding: 15px 15px;
+  color: #012935;
+}
+.main_nosotros section .boton_descarga_nosotros:hover {
+  transform: scale(1.1);
+  box-shadow: 2px 2px 30px rgba(255, 255, 255, 0.377);
 }
 
 .main_perfil {
@@ -256,9 +267,9 @@ nav #toggle, nav label {
 }
 .main_perfil .cerrar_sesion {
   grid-column: 2/3;
-  grid-row: 3/5;
+  grid-row: 3/4;
   align-self: center;
-  margin-bottom: 190px;
+  margin-bottom: 30px;
   background-color: #f9b812;
   color: #012935;
   width: 180px;
@@ -371,5 +382,177 @@ nav #toggle, nav label {
 }
 
 /* -------- Termina el Footer ----- */
+@media (max-width: 1024px) {
+  .datafiscal {
+    padding-left: 100px;
+  }
+  .main_perfil {
+    display: flex;
+    flex-direction: column;
+  }
+  .datos_perfil {
+    padding-left: 7%;
+  }
+  .cerrar_sesion {
+    margin-top: 40px;
+  }
+  .cerrar_sesion p {
+    margin: 10px 0px;
+  }
+}
+@media (max-width: 768px) {
+  .social_orden {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+  }
+  .datafiscal {
+    padding-left: 20px;
+    align-self: center;
+  }
+  .ubication {
+    display: flex;
+    flex-direction: column;
+  }
+  .navbar_footer {
+    gap: 15px;
+    padding-left: 20px;
+    font-size: 15px;
+  }
+  .servicios_lista {
+    justify-content: center;
+  }
+  .section2service {
+    align-self: center;
+  }
+  .main_nosotros {
+    margin-top: 5%;
+  }
+  .titulo_nosotros {
+    text-align: center;
+  }
+  .subtitulo {
+    text-align: center;
+  }
+  .texto_principal {
+    text-align: center;
+  }
+}
+@media (max-width: 650px) {
+  nav .menu {
+    width: 100%;
+    height: 0;
+    overflow: hidden;
+  }
+  .menu ul {
+    flex-direction: column;
+    align-items: center;
+    /*padding: 0.5rem 0;*/
+  }
+  nav label {
+    display: inline-flex;
+    color: white;
+    cursor: pointer;
+  }
+  nav #toggle:checked ~ .menu {
+    height: 100%;
+  }
+  .nav_img {
+    padding-left: 50px;
+  }
+}
+@media (max-width: 549px) {
+  .footer_section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+  .social_orden {
+    flex-direction: row;
+  }
+  .social {
+    grid-column: 1/2;
+    grid-row: 2/3;
+  }
+  .datafiscal {
+    grid-column: 2/3;
+    grid-row: 2/3;
+  }
+  .section2service {
+    padding: 0px 10px;
+    margin: 10px 0px;
+  }
+  .boton {
+    margin: 20px 0px;
+  }
+  .boton_descarga_nosotros {
+    margin: 5% 8%;
+  }
+}
+@media (max-width: 450px) {
+  .main_servicios h2 {
+    align-self: center;
+  }
+  .section2service {
+    margin: 20px 0px;
+  }
+  .main_contacto main h2 {
+    text-align: center;
+  }
+  .whatsapp {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .email {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .instagram {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .titulo_index {
+    text-align: center;
+  }
+}
+@media (max-width: 375px) {
+  .profesional {
+    width: 200px;
+  }
+  .navbar_footer {
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 0px 50px;
+    justify-content: center;
+  }
+  .footer_section {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr);
+  }
+  .navbar_footer_main {
+    grid-column: 1/1;
+    grid-row: 1/2;
+  }
+  .ubication {
+    grid-column: 1/1;
+    grid-row: 2/3;
+  }
+  .social {
+    grid-column: 1/1;
+    grid-row: 3/4;
+  }
+  .social_orden {
+    gap: 20px;
+  }
+  .datafiscal {
+    grid-column: 1/1;
+    grid-row: 4/5;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */

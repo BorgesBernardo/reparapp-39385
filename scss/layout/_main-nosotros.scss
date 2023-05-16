@@ -4,7 +4,6 @@
         margin: 10px 0px;
         font-size: 30px;
         font-family: 'Secular One', sans-serif;
-        
     }
     section{
         .subtitulo{
@@ -13,7 +12,7 @@
             margin: 20px;
             font-size: 20px;
             font-family: 'Roboto', sans-serif;
-            color: #f9b812;
+            color: $color-selectiontext;
         }
         .texto_principal{
             display: flex;
@@ -27,11 +26,18 @@
         .boton_descarga_nosotros{
             font-weight: bold;
             text-align: center;
-            padding: 20px 0px;
-            background-color: #f9b812;
-            margin: 5% 20%;
+            background-color: $color-botones;
+            margin: 20px 20%;
             font-size: 24px;
+            border-style: none;
             border-radius: 20px;
+            width: auto;
+            padding: 15px 15px;
+            color:$background-sitio ;
+        }
+        .boton_descarga_nosotros:hover{
+            transform: scale(1.1);
+            box-shadow: 2px 2px 30px rgba(255, 255, 255, 0.377);
         }
     }
 }

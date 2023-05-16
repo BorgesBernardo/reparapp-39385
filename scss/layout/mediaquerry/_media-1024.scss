@@ -1,0 +1,18 @@
+@media(max-width:1024px){
+    .datafiscal{
+        padding-left: 100px;
+    }
+    .main_perfil{
+        display: flex;
+        flex-direction: column;
+    }
+    .datos_perfil{
+        padding-left: 7%;
+    }
+    .cerrar_sesion{
+        margin-top: 40px;
+    }
+    .cerrar_sesion p{
+        margin: 10px 0px;
+    }
+}
