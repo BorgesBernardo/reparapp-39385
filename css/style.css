@@ -1,10 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;0,900;1,300&family=Secular+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;0,900;1,300&family=Secular+One&display=swap");
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
 
+/*
+font-family: 'Roboto', sans-serif;
+font-family: 'Secular One', sans-serif;
+*/
 /*
 font-family: 'Roboto', sans-serif;
 font-family: 'Secular One', sans-serif;
