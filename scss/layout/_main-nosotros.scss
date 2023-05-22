@@ -3,7 +3,7 @@
         padding: 10px 20px;
         margin: 10px 0px;
         font-size: 30px;
-        font-family: 'Secular One', sans-serif;
+        font-family: $roboto;
     }
     section{
         .subtitulo{
@@ -11,7 +11,7 @@
             padding-top: 10px;
             margin: 20px;
             font-size: 20px;
-            font-family: 'Roboto', sans-serif;
+            font-family: $roboto;
             color: $color-selectiontext;
         }
         .texto_principal{
@@ -21,7 +21,7 @@
             margin: 40px 14px;
             padding: 0px 15px;
             font-size: 18px;
-            font-family: 'Roboto', sans-serif;
+            font-family: $roboto;
         }
         .boton_descarga_nosotros{
             font-weight: bold;
@@ -33,7 +33,7 @@
             border-radius: 20px;
             width: auto;
             padding: 15px 15px;
-            color:$background-sitio ;
+            color:$background-sitio;
         }
         .boton_descarga_nosotros:hover{
             transform: scale(1.1);

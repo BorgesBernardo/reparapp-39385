@@ -1,16 +1,14 @@
 /* ------ comienza header index ----- */ 
 
 .main_navbar{
-    h1{
-        font-family: 'Secular One', sans-serif;
-    }
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    margin: 0px auto;
+    margin: auto auto;
     padding: 1rem;
     width: 100%;
+    height: 50%;
 }
 
 nav #toggle, nav label{
@@ -18,9 +16,12 @@ nav #toggle, nav label{
 }
 
 .reparapp{
+    font-family: $roboto;
+    font-size: 2rem;
     b{
         color: $color-selectiontext;
         font-weight: bold;
+        font-family: $roboto;
     }
 }
 
@@ -35,12 +36,16 @@ nav #toggle, nav label{
         a{
             text-decoration: none;
             color: $color-texto;
-            font-family: 'Roboto', sans-serif;
+            font-family: $roboto;
+            .foto-perfil{
+                width: 50px;
+                vertical-align: bottom;
+            }
         }
     }
-    .selectionbottom {
-        color: $color-botones;
-        font-family: 'Roboto', sans-serif;
+    .selectionbotton {
+        color: $color-selectiontext;
+        font-family: $roboto;
     }
 }
 

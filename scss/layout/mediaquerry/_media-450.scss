@@ -1,29 +1,35 @@
 @media(max-width: 450px){
-    .main_servicios h2{
-        align-self: center;
+  .main_servicios{ 
+    h2{
+      align-self: center;
     }
-    .section2service{
-        margin: 20px 0px;
-    }
-    .main_contacto main h2{
+  }
+  .section2service{
+    margin: 20px 0px;
+  }
+  .main_contacto{ 
+    main{
+      h2{
         text-align: center;
+      }
     }
-    .whatsapp{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-    .email{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;    
-    }
-    .instagram{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-    .titulo_index{
-        text-align: center;
-    }
+  }
+  .whatsapp{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .email{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;    
+  }
+  .instagram{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .titulo_index{
+    text-align: center;
+  }
 }

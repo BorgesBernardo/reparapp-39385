@@ -24,12 +24,12 @@
             text-decoration: none;
             color: $color-texto;
             font-size: 20px;
-            font-family: 'Roboto', sans-serif;
+            font-family: $roboto;
         }
     }
     .selectionbotton{
         color:$color-selectiontext;
-        font-family: 'Roboto', sans-serif;
+        font-family: $roboto;
     }
 }
 
@@ -41,12 +41,12 @@
     gap: 10px;
     font-size: 20px;
     p{
-        font-family: 'Roboto', sans-serif;
+        font-family: $roboto;
     }
     img{
         width: 40px;
     }
-    font-family: 'Roboto', sans-serif;
+    font-family: $roboto;
     grid-column: 2 / 3;
     justify-self: center;
     align-self: center;
@@ -92,7 +92,7 @@
 .datafiscal{
     display: flex;
     flex-direction: column;
-    font-family: 'Roboto', sans-serif;
+    font-family: $roboto;
     justify-content: flex-end;
     a{
         list-style: none;

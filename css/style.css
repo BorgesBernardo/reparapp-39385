@@ -1,15 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;0,900;1,300&family=Secular+One&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;0,900;1,300&family=Secular+One&display=swap");
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
 
-/*
-font-family: 'Roboto', sans-serif;
-font-family: 'Secular One', sans-serif;
-*/
 /*
 font-family: 'Roboto', sans-serif;
 font-family: 'Secular One', sans-serif;
@@ -25,21 +20,24 @@ body {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  margin: 0px auto;
+  margin: auto auto;
   padding: 1rem;
   width: 100%;
-}
-.main_navbar h1 {
-  font-family: "Secular One", sans-serif;
+  height: 50%;
 }
 
 nav #toggle, nav label {
   display: none;
 }
 
+.reparapp {
+  font-family: "Roboto", sans-serif;
+  font-size: 2rem;
+}
 .reparapp b {
   color: #f9b812;
   font-weight: bold;
+  font-family: "Roboto", sans-serif;
 }
 
 .navbar {
@@ -55,7 +53,11 @@ nav #toggle, nav label {
   color: white;
   font-family: "Roboto", sans-serif;
 }
-.navbar .selectionbottom {
+.navbar li a .foto-perfil {
+  width: 50px;
+  vertical-align: bottom;
+}
+.navbar .selectionbotton {
   color: #f9b812;
   font-family: "Roboto", sans-serif;
 }
@@ -68,7 +70,7 @@ nav #toggle, nav label {
 /* ------ comienza header  ----- */
 /* -------- Comienza Main Index --------*/
 .titulo_index {
-  font-family: "Secular One", sans-serif;
+  font-family: "Roboto", sans-serif;
   margin: 20px 20px;
 }
 
@@ -96,6 +98,12 @@ nav #toggle, nav label {
 .profesionales_lista .profesional section img {
   width: 150px;
 }
+.profesionales_lista .profesional section h3 {
+  font-family: "Roboto", sans-serif;
+}
+.profesionales_lista .profesional section p {
+  font-family: "Roboto", sans-serif;
+}
 
 /* -------- Termina Main Index --------*/
 .main_servicios {
@@ -110,6 +118,7 @@ nav #toggle, nav label {
   grid-column: 1/1;
   grid-row: 1/2;
   justify-content: center;
+  font-family: "Roboto", sans-serif;
 }
 .main_servicios .section2service {
   grid-column: 1/1;
@@ -119,6 +128,12 @@ nav #toggle, nav label {
   justify-self: center;
   align-self: flex-start;
   padding-bottom: 0px;
+}
+.main_servicios .section2service h3 {
+  font-family: "Roboto", sans-serif;
+}
+.main_servicios .section2service p {
+  font-family: "Roboto", sans-serif;
 }
 .main_servicios .boton {
   grid-column: 1/1;
@@ -135,6 +150,8 @@ nav #toggle, nav label {
   width: auto;
   margin-bottom: 20px;
   padding: 15px 15px;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
 }
 .main_servicios .boton .boton_descarga .button:hover {
   transform: scale(1.1);
@@ -154,6 +171,10 @@ nav #toggle, nav label {
 }
 .servicios_lista div section img {
   width: 100px;
+}
+
+.main_navbar h1 {
+  margin-bottom: 0px;
 }
 
 .main_contacto main h2 {
@@ -214,7 +235,7 @@ nav #toggle, nav label {
   padding: 10px 20px;
   margin: 10px 0px;
   font-size: 30px;
-  font-family: "Secular One", sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 .main_nosotros section .subtitulo {
   padding-left: 20px;
@@ -275,13 +296,20 @@ nav #toggle, nav label {
   grid-row: 3/4;
   align-self: center;
   margin-bottom: 30px;
-  background-color: #f9b812;
-  color: #012935;
   width: 180px;
-  padding: 5px 0px;
-  font-size: 25px;
-  text-align: center;
-  border-radius: 10px;
+}
+.main_perfil .cerrar_sesion button {
+  font-size: 20px;
+  background-color: #f9b812;
+  border-style: none;
+  border-radius: 20px;
+  padding: 15px 15px;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+}
+.main_perfil .cerrar_sesion .button:hover {
+  transform: scale(1.1);
+  box-shadow: 2px 2px 30px rgba(255, 255, 255, 0.377);
 }
 
 .datos_perfil {

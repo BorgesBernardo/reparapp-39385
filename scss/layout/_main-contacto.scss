@@ -1,3 +1,10 @@
+.main_navbar{
+    h1{
+        margin-bottom: 0px;
+    }
+}
+
+
 .main_contacto{
     main{
         h2{
@@ -13,7 +20,7 @@
     align-items: center;
     justify-content: space-evenly;
     margin: 20px 20px;
-    font-family: 'Roboto', sans-serif;
+    font-family: $roboto;
     font-size: 25px;
     .whatsapp{
         display: flex;

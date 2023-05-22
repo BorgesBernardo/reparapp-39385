@@ -1,7 +1,7 @@
 /* -------- Comienza Main Index --------*/
 
 .titulo_index{
-    font-family: 'Secular One', sans-serif;
+    font-family: $roboto;
     margin: 20px 20px;
 }
 
@@ -27,6 +27,12 @@
             gap: 10px;
             img{
                 width: 150px;
+            }
+            h3{
+                font-family: $roboto;
+            }
+            p{
+                font-family: $roboto;
             }
         }
     }
