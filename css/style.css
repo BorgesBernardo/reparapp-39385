@@ -231,6 +231,61 @@ nav #toggle, nav label {
   width: 60px;
 }
 
+.contenedor-formulario {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+}
+.contenedor-formulario .formulario {
+  grid-column: 1/5;
+  grid-row: 1/3;
+  margin: 20px 0px 20px 0px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+.contenedor-formulario .formulario .nombre-apellido form input {
+  padding: 10px 100px 10px 5px;
+  border-radius: 8px;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+}
+.contenedor-formulario .formulario .nombre-apellido form .input-nombre {
+  margin-bottom: 20px;
+}
+.contenedor-formulario .formulario .nombre-apellido form .input-apellido {
+  margin-bottom: 5px;
+}
+.contenedor-formulario .formulario .email-telefono form input {
+  padding: 10px 100px 10px 5px;
+  border-radius: 8px;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+}
+.contenedor-formulario .formulario .email-telefono form .input-correo {
+  margin-bottom: 20px;
+}
+.contenedor-formulario .formulario .email-telefono form .input-telefono {
+  margin-bottom: 5px;
+}
+.contenedor-formulario .formulario .mensaje textarea {
+  margin-bottom: 10px;
+  padding: 5px 50px 5px 5px;
+  border-radius: 8px;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+}
+.contenedor-formulario .formulario .boton-enviar button {
+  padding: 20px 60px;
+  border-radius: 10px;
+  border-color: transparent;
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  background-color: #f9b812;
+}
+
 .main_nosotros .titulo_nosotros {
   padding: 10px 20px;
   margin: 10px 0px;
@@ -423,53 +478,63 @@ nav #toggle, nav label {
     display: flex;
     flex-direction: column;
   }
-  .datos_perfil {
+  .main_perfil .datos_perfil {
     padding-left: 7%;
   }
-  .cerrar_sesion {
+  .main_perfil .cerrar_sesion {
     margin-top: 40px;
   }
-  .cerrar_sesion p {
+  .main_perfil .cerrar_sesion p {
     margin: 10px 0px;
+  }
+  .boton-enviar {
+    padding: 0px 40px 0px 40px;
   }
 }
 @media (max-width: 768px) {
-  .social_orden {
+  .footer_section .navbar_footer_main .navbar_footer {
+    gap: 15px;
+    padding-left: 20px;
+    font-size: 15px;
+  }
+  .footer_section .ubication {
+    display: flex;
+    flex-direction: column;
+  }
+  .footer_section .social .social_orden {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 5px;
   }
-  .datafiscal {
+  .footer_section .datafiscal {
     padding-left: 20px;
     align-self: center;
   }
-  .ubication {
-    display: flex;
-    flex-direction: column;
-  }
-  .navbar_footer {
-    gap: 15px;
-    padding-left: 20px;
-    font-size: 15px;
-  }
-  .servicios_lista {
+  .main_servicios .servicios_lista {
     justify-content: center;
   }
-  .section2service {
+  .main_servicios .section2service {
     align-self: center;
   }
   .main_nosotros {
     margin-top: 5%;
   }
-  .titulo_nosotros {
+  .main_nosotros h2 {
     text-align: center;
   }
-  .subtitulo {
+  .main_nosotros section .subtitulo {
     text-align: center;
   }
-  .texto_principal {
+  .main_nosotros section .texto_principal {
     text-align: center;
+    margin: 0px 0px 10px 0px;
+  }
+  .main_nosotros section .boton_descarga_nosotros {
+    margin: 20px 20% 30px 20%;
+  }
+  .boton-enviar {
+    padding: 0px 40px 0px 40px;
   }
 }
 @media (max-width: 650px) {
@@ -493,6 +558,9 @@ nav #toggle, nav label {
   }
   .nav_img {
     padding-left: 50px;
+  }
+  .boton-enviar {
+    padding: 0px 40px 0px 40px;
   }
 }
 @media (max-width: 549px) {
@@ -533,22 +601,33 @@ nav #toggle, nav label {
   .main_contacto main h2 {
     text-align: center;
   }
-  .whatsapp {
-    display: flex;
+  .datos_contacto .whatsapp {
     flex-direction: column;
     justify-content: center;
   }
-  .email {
-    display: flex;
+  .datos_contacto .whatsapp p {
+    padding-top: 0px;
+    margin-bottom: 40px;
+  }
+  .datos_contacto .email {
     flex-direction: column;
     justify-content: center;
   }
-  .instagram {
-    display: flex;
+  .datos_contacto .email p {
+    padding-top: 0px;
+    margin-bottom: 40px;
+    padding-left: 0px;
+  }
+  .datos_contacto .instagram {
     flex-direction: column;
     justify-content: center;
   }
-  .titulo_index {
+  .datos_contacto .instagram p {
+    padding-top: 0px;
+    margin-bottom: 20px;
+    padding-left: 0px;
+  }
+  .datos_contacto .titulo_index {
     text-align: center;
   }
 }
@@ -556,33 +635,33 @@ nav #toggle, nav label {
   .profesional {
     width: 200px;
   }
-  .navbar_footer {
-    flex-direction: row;
-    flex-wrap: wrap;
-    padding: 0px 50px;
-    justify-content: center;
-  }
   .footer_section {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(4, 1fr);
   }
-  .navbar_footer_main {
+  .footer_section .navbar_footer_main {
     grid-column: 1/1;
     grid-row: 1/2;
   }
-  .ubication {
+  .footer_section .navbar_footer_main .navbar_footer {
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 0px 50px;
+    justify-content: center;
+  }
+  .footer_section .ubication {
     grid-column: 1/1;
     grid-row: 2/3;
   }
-  .social {
+  .footer_section .social {
     grid-column: 1/1;
     grid-row: 3/4;
   }
-  .social_orden {
+  .footer_section .social .social_orden {
     gap: 20px;
   }
-  .datafiscal {
+  .footer_section .datafiscal {
     grid-column: 1/1;
     grid-row: 4/5;
   }

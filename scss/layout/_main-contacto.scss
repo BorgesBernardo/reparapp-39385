@@ -3,8 +3,6 @@
         margin-bottom: 0px;
     }
 }
-
-
 .main_contacto{
     main{
         h2{
@@ -61,6 +59,70 @@
         }
     }
 }
+.contenedor-formulario{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    .formulario{
+        grid-column:1 / 5;
+        grid-row: 1 / 3;
+        margin: 20px 0px 20px 0px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center;
+        .nombre-apellido{
+            form{
+                input{
+                    padding: 10px 100px 10px 5px;
+                    border-radius: 8px;
+                    font-family: $roboto;
+                    font-size: 16px;
+                }
+                .input-nombre{
+                    margin-bottom: 20px;
+                }
+                .input-apellido{
+                    margin-bottom: 5px;
+                }
+            }
+        }
+        .email-telefono{
+            form{
+                input{
+                    padding: 10px 100px 10px 5px;
+                    border-radius: 8px;
+                    font-family: $roboto;
+                    font-size: 16px;
+                }
+                .input-correo{
+                    margin-bottom: 20px;
+                }
+                .input-telefono{
+                    margin-bottom: 5px;
+                }
+            }
+        }
+        .mensaje{
+            textarea{
+                margin-bottom: 10px;
+                padding: 5px 50px 5px 5px;
+                border-radius: 8px;
+                font-family: $roboto;
+                font-size: 16px;
+            }
+        }
+        .boton-enviar{
+            button{
+                padding: 20px 60px;
+                border-radius: 10px;
+                border-color: transparent;
+                font-family: $roboto;
+                font-size: 20px;
+                font-weight: bold;
+                background-color: $color-botones;
+            }
+        }
+    }
 
-
-
+}

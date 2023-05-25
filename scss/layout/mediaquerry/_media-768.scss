@@ -1,39 +1,59 @@
 @media(max-width:768px){
-    .social_orden{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 5px;
-    }
-    .datafiscal{
-        padding-left: 20px;
-        align-self: center;
+.footer_section{
+    .navbar_footer_main{
+        .navbar_footer{
+            gap: 15px;
+            padding-left: 20px;
+            font-size: 15px;
+        }
     }
     .ubication{
         display: flex;
         flex-direction: column;
     }
-    .navbar_footer{
-        gap: 15px;
-        padding-left: 20px;
-        font-size: 15px;
+    .social{
+        .social_orden{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 5px;
+        }
     }
+    .datafiscal{
+        padding-left: 20px;
+        align-self: center;
+    }
+}
+
+.main_servicios{
     .servicios_lista{
         justify-content: center;
     }
     .section2service{
         align-self: center;
     }
-    .main_nosotros{
-        margin-top: 5%;
-    }
-    .titulo_nosotros{
+}
+
+.main_nosotros{
+    margin-top: 5%;
+    h2{
         text-align: center;
     }
-    .subtitulo{
-        text-align: center;
+    section{
+        .subtitulo{
+            text-align: center;
+        }
+        .texto_principal{
+            text-align: center;
+            margin: 0px 0px 10px 0px;
+        }
+        .boton_descarga_nosotros{
+            margin: 20px 20% 30px 20%;
+        }
     }
-    .texto_principal{
-        text-align: center;
-    }
+}
+
+.boton-enviar{
+    padding: 0px 40px 0px 40px;
+}
 }

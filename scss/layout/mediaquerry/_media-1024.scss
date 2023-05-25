@@ -5,14 +5,17 @@
     .main_perfil{
         display: flex;
         flex-direction: column;
+        .datos_perfil{
+            padding-left: 7%;
+        }
+        .cerrar_sesion{
+            margin-top: 40px;
+            p{
+                margin: 10px 0px;
+            }
+        }
     }
-    .datos_perfil{
-        padding-left: 7%;
-    }
-    .cerrar_sesion{
-        margin-top: 40px;
-    }
-    .cerrar_sesion p{
-        margin: 10px 0px;
+    .boton-enviar{
+        padding: 0px 40px 0px 40px;
     }
 }
