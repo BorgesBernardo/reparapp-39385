@@ -8,6 +8,9 @@ body{
     background-image: $bg_index;
     background-size: cover;
     background-repeat: no-repeat;
+    display: grid;
+    grid-template-columns: none;
+    grid-template-rows: 5.1rem 1fr 8.1rem;
 }
 
 .servicios{
