@@ -1,4 +1,25 @@
 @media(max-width:1024px){
+.main_index{
+    height: 76vh;
+    h2{
+        font-size: 3rem;
+        margin: 0rem 25rem 0rem 0rem;
+    }
+    h3{
+        margin:1.25rem 0rem 0.9rem 0rem;
+    }
+    .profesionales_lista{
+        gap: 1rem;
+        margin-top: 6rem;
+        .profesional{
+            section{
+                img{
+                    width: 8rem;
+                }
+            }
+        }
+    }
+    }
     .datafiscal{
         padding-left: 100px;
     }

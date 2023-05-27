@@ -1,42 +1,64 @@
-/* -------- Comienza Main Index --------*/
-
-.titulo_index{
-    font-family: $roboto;
-    margin: 20px 20px;
-}
-
 .main_index{
     display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto 1fr;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(4,10.7rem);
+    height: 75.5vh;
+    background-color:rgba(0, 0, 0, 0.643);
+    h2{
+        grid-column: 1 / 4;
+        grid-row: 1 / 1;
+        font-family: $roboto;
+        font-size: 4rem;
+        padding: 2.5rem 1.25rem;
+        align-self: center;
+        text-align: end;
+        margin: 0rem 37.5rem 0rem 0rem;
+        b{
+            color: $color-selectiontext;
+            font-weight: bold;
+            font-family: $roboto;
+        }
+    }
+    h3{
+        font-size: 1.7rem;
+        font-family: $roboto;
+        padding-left: 1.875rem;
+        margin:1.25rem 0rem 2.5rem 0rem;
+    }
 }
 
 .profesionales_lista{
+    grid-column: 1 / 4;
+    grid-row: 3 / 5;
+    justify-content: center;
+    align-items: baseline;
     display: flex;
     flex-direction: row;
-    gap: 30px;
+    flex-wrap: wrap;
+    gap: 3rem;
     justify-content: center;
     align-content: center;
-    margin: 20px 20px;
-    font-family: 'Roboto', sans-serif;
-    font-size: 15px;
-    flex-wrap: wrap;
+    width: 100%;
     .profesional{
+        section:hover{
+            transform: scale(1.3);
+            transition: 0.5s;
+            }
         section{
             text-align: center;
-            gap: 10px;
+            gap: 0.625rem;
             img{
-                width: 150px;
+                width: 9.375rem;
             }
-            h3{
+            h4{
                 font-family: $roboto;
+                font-size: 1.5rem;
             }
             p{
                 font-family: $roboto;
+                font-size: 1rem;
             }
         }
     }
 }
-
-/* -------- Termina Main Index --------*/
 

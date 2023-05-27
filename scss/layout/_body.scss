@@ -1,4 +1,35 @@
 body{
     background-color: $background-sitio;
     color: $color-texto;
+    height: 100vh;
+}
+
+.index{
+    background-image: $bg_index;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.servicios{
+    background-image: $bg_servicios;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.contacto{
+    background-image: $bg_contacto;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.nosotros{
+    background-image: $bg_nosotros;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.perfil{
+    background-image: $bg_perfil;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
