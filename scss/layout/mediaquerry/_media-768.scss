@@ -34,33 +34,44 @@
     }
 }
 
-.main_servicios{
-    .servicios_lista{
-        justify-content: center;
-    }
-    .section2service{
-        align-self: center;
+.servicios{
+    .main_servicios{
+        h2{
+            text-align: center;
+        }
+        .servicios_lista{
+            justify-content: center;
+        }
+        .section2service{
+            align-self: center;
+            margin: 0px 20px;
+        }
     }
 }
 
-.main_nosotros{
-    margin-top: 5%;
-    h2{
-        text-align: center;
-    }
-    section{
-        .subtitulo{
+.nosotros{
+    grid-template-rows: 5.096rem 1fr 8.6rem;
+    .main_nosotros{
+        height: 97vh;
+        h2{
             text-align: center;
+        }
+        .container_subtitulo{
+            margin: 10px 30px 10px 30px;
+            h3{
+                text-align: center;
+            }
         }
         .texto_principal{
             text-align: center;
-            margin: 0px 0px 10px 0px;
         }
-        .boton_descarga_nosotros{
-            margin: 20px 20% 30px 20%;
+        button{
+            margin: 20px 20px 30px 20px;
         }
     }
+    
 }
+
 
 .main_perfil{
     height: 112vh;
@@ -86,6 +97,19 @@
     }
 }
 
+.contacto{
+    .main_contacto{
+        main{
+            h2{
+                text-align: center;
+                margin: 2rem 0rem;
+            }
+            .datos_contacto{
+                margin: 1.5rem 5rem 3rem 5rem;
+            }
+        }
+    }
+}
 
 .boton-enviar{
     padding: 0px 40px 0px 40px;

@@ -1,125 +1,131 @@
-.main_contacto{
-    height: 75.4vh;
-    background-color:rgba(0, 0, 0, 0.643);
-    main{
-        h2{
-            font-size: 1.875rem;
-            padding: 1.25rem 1.25rem;
-            font-family: $roboto;
-        }
-    }
-}
-.datos_contacto{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-evenly;
-    margin-top: 3.75rem;
-    font-family: $roboto;
-    font-size: 1.5625rem;
-    .whatsapp{
-        display: flex;
-        flex-direction: row;
-        p{
-            padding-top: 0.75rem;
-            padding-left: 0.625rem;
-            margin-top: 0.625rem;
-            text-decoration: none;
-            font-family: $roboto;
-        }
-        img{
-            width: 4.375rem;
-        }
-    }
-    .email{
-        display: flex;
-        flex-direction: row;
-        p{
-            padding-top: 0.75rem;
-            padding-left: 0.625rem;
-            font-family: $roboto;
-        }
-        img{
-            padding-bottom: 0.125rem;
-            width: 4.375rem;
-        }
-    }
-    .instagram{
-        display: flex;
-        flex-direction: row;
-        p{
-            padding-top: 0.75rem;
-            padding-left: 0.9375rem;
-            font-family: $roboto;
-        }
-        img{
-            width: 3.75rem;
-        }
-    }
-}
-.contenedor-formulario{
-    .formulario{
-        margin-top: 8.125rem;
-        display: flex;
-        flex-wrap: wrap;
-        gap: 1.25rem;
-        justify-content: center;
-        .nombre-apellido{
-            form{
-                input{
-                    padding: 0.625rem 6.25rem 0.625rem 0.3125rem;
-                    border-radius: 0.5rem;
-                    font-family: $roboto;
-                    font-size: 1rem;
-                }
-                .input-nombre{
-                    margin-bottom: 1.25rem;
-                }
-                .input-apellido{
-                    margin-bottom: 0.3125rem;
-                }
-            }
-        }
-        .email-telefono{
-            form{
-                input{
-                    padding: 0.625rem 6.25rem 0.625rem 0.3125rem;
-                    border-radius: 0.5rem;
-                    font-family: $roboto;
-                    font-size: 1rem;
-                }
-                .input-correo{
-                    margin-bottom: 1.25rem;
-                }
-                .input-telefono{
-                    margin-bottom: 0.3125rem;
-                }
-            }
-        }
-        .mensaje{
-            textarea{
-                margin-bottom: 10px;
-                padding: 0.3125rem 3.125rem 0.3125rem 0.3125rem;
-                border-radius: 0.5rem;
+.contacto{
+    .main_contacto{
+        height: 76.5vh;
+        background-color:rgba(0, 0, 0, 0.643);
+        main{
+            h2{
+                font-size: 1.875rem;
+                padding: 1.25rem 1.25rem;
                 font-family: $roboto;
-                font-size: 1rem;
+                margin: 2rem 2rem;
             }
-        }
-        .boton-enviar{
-            button{
-                padding: 1.2rem 3.75rem;
-                border-radius: 0.625rem;
-                border-color: transparent;
+            .datos_contacto{
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                align-items: center;
+                justify-content: space-evenly;
                 font-family: $roboto;
-                font-size: 1.25rem;
-                font-weight: bold;
-                background-color: $color-botones;
+                font-size: 1.5625rem;
+                margin: 3rem 0rem;
+                .whatsapp{
+                    display: flex;
+                    flex-direction: row;
+                    p{
+                        padding-top: 0.75rem;
+                        padding-left: 0.625rem;
+                        margin-top: 0.625rem;
+                        text-decoration: none;
+                        font-family: $roboto;
+                    }
+                    img{
+                        width: 4.375rem;
+                    }
+                }
+                .email{
+                    display: flex;
+                    flex-direction: row;
+                    p{
+                        padding-top: 0.75rem;
+                        padding-left: 0.625rem;
+                        font-family: $roboto;
+                    }
+                    img{
+                        padding-bottom: 0.125rem;
+                        width: 4.375rem;
+                    }
+                }
+                .instagram{
+                    display: flex;
+                    flex-direction: row;
+                    p{
+                        padding-top: 0.75rem;
+                        padding-left: 0.9375rem;
+                        font-family: $roboto;
+                    }
+                    img{
+                        width: 3.75rem;
+                    }
+                }
             }
-            button:hover{
-                transform: scale(1.1);
-                box-shadow: 0.125rem 0.125rem 1.875rem rgba(255, 255, 255, 0.377);
+            .contenedor-formulario{
+                margin: 2rem 0rem;
+                .formulario{
+                    display: flex;
+                    flex-direction: row;
+                    flex-wrap: wrap;
+                    gap: 1.25rem;
+                    justify-content: center;
+                    .nombre-apellido{
+                        form{
+                            input{
+                                padding: 0.625rem 6.25rem 0.625rem 0.3125rem;
+                                border-radius: 0.5rem;
+                                font-family: $roboto;
+                                font-size: 1rem;
+                            }
+                            .input-nombre{
+                                margin-bottom: 1.25rem;
+                            }
+                            .input-apellido{
+                                margin-bottom: 0.3125rem;
+                            }
+                        }
+                    }
+                    .email-telefono{
+                        form{
+                            input{
+                                padding: 0.625rem 6.25rem 0.625rem 0.3125rem;
+                                border-radius: 0.5rem;
+                                font-family: $roboto;
+                                font-size: 1rem;
+                            }
+                            .input-correo{
+                                margin-bottom: 1.25rem;
+                            }
+                            .input-telefono{
+                                margin-bottom: 0.3125rem;
+                            }
+                        }
+                    }
+                    .mensaje{
+                        textarea{
+                            margin-bottom: 10px;
+                            padding: 0.3125rem 3.125rem 0.3125rem 0.3125rem;
+                            border-radius: 0.5rem;
+                            font-family: $roboto;
+                            font-size: 1rem;
+                        }
+                    }
+                    .boton-enviar{
+                        button{
+                            padding: 1.2rem 3.75rem;
+                            border-radius: 0.625rem;
+                            border-color: transparent;
+                            font-family: $roboto;
+                            font-size: 1.25rem;
+                            font-weight: bold;
+                            background-color: $color-botones;
+                        }
+                        button:hover{
+                            transform: scale(1.1);
+                            box-shadow: 0.125rem 0.125rem 1.875rem rgba(255, 255, 255, 0.377);
+                        }
+                    }
+                }
             }
         }
     }
 }
+
+

@@ -1,40 +1,96 @@
 @media(max-width: 549px){
+  .index{
     .main_index{
-        height: 110vh;
+      height: 110vh;
     }
-    .contenedor-profesionales{
-        margin: 0px 30px;
+    .profesionales_lista{
+      .contenedor-profesionales{
+          margin: 0px 30px;
+      }
     }
     .footer_section{
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(2, 1fr);
-        .navbar_footer_main{
-            text-align: center;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+      .navbar_footer_main{
+          text-align: center;
+      }
+      .social{
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
+        .social_orden{
+          flex-direction: row;
+          align-items: center;
+          gap: 0.9375rem;
         }
-        .social{
-            grid-column: 1 / 2;
-            grid-row: 2 / 3;
-            .social_orden{
-                flex-direction: row;
-                align-items: center;
-                gap: .9375rem;
+      }
+      .datafiscal{
+        grid-column: 2 / 3;
+        grid-row: 2 / 3;
+      }
+    }
+  }
+
+  .servicios{
+    .main_servicios{
+      height: 105vh;
+      .servicios_lista{
+        margin: 25px 0px 35px 0px;
+      }
+      .section2service{
+        padding: 0px 10px;
+        margin: 10px 0px;
+      }
+    }
+  }
+
+  .boton{
+    margin: 20px 0px;
+  }
+  .boton_descarga_nosotros{
+    margin: 5% 8%;
+  }
+
+  .nosotros{
+    grid-template-rows: 4.75rem 1fr 8.1rem;
+    .main_nosotros{
+      height: 120vh;
+      .texto_principal{
+        button{
+          font-size: 1.2rem;
+          margin: 20px 20px 30px 20px;
+        }
+      }
+    }
+  }
+
+.contacto{
+    .main_contacto{
+        main{
+            .contenedor-formulario{
+                .formulario{
+                    .nombre-apellido{
+                        form{
+                            input{
+                                padding: 0.625rem 15rem 0.625rem 0.3125rem;
+                            }
+                        }
+                    }
+                    .email-telefono{
+                        form{
+                            input{
+                                padding: 0.625rem 15rem 0.625rem 0.3125rem;
+                            }
+                        }
+                    }
+                    .mensaje{
+                        textarea{
+                            padding: 0.3125rem 9.75rem 0.3125rem 0.3125rem;
+                        }
+                    }
+                }
             }
         }
     }
-    .datafiscal{
-        grid-column: 2 / 3;
-        grid-row: 2 / 3;
-    }
-    .section2service{
-        padding: 0px 10px;
-        margin: 10px 0px;
-    }
-    .boton{
-        margin: 20px 0px;
-    }
-    .boton_descarga_nosotros{
-        margin: 5% 8%;
-    }
-    
+}
 }

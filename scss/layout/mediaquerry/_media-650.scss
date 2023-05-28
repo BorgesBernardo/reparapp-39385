@@ -29,4 +29,58 @@
     .perfil{
         grid-template-rows: 4.75rem 1fr 8.1rem;
     }
+    .nosotros{
+        grid-template-rows: 4.75rem 1fr 8.1rem;
+        .main_nosotros{
+            height: 108vh;
+            .texto_principal{
+                button{
+                    font-size: 1.2rem;
+                    margin: 20px 20px 30px 20px;
+                }
+            }
+        }
+    }
+    .contacto{
+        grid-template-rows: 4.75rem 1fr 8.1rem;
+        .main_contacto{
+            height: 103vh;
+            main{
+                .datos_contacto{
+                    margin: 3rem 0rem;
+                }
+                .contenedor-formulario{
+                    .formulario{
+                        .nombre-apellido{
+                            form{
+                                input{
+                                    padding: 0.625rem 20rem 0.625rem 0.3125rem;
+                                }
+                            }
+                        }
+                        .email-telefono{
+                            form{
+                                input{
+                                    padding: 0.625rem 20rem 0.625rem 0.3125rem;
+                                }
+                            }
+                        }
+                        .mensaje{
+                            textarea{
+                                padding: 0.3125rem 14.75rem 0.3125rem 0.3125rem;
+                            }
+                        }
+                    }
+                }
+            }
+            
+        }
+    }
+
+    .servicios{
+        grid-template-rows: 4.75rem 1fr 8.1rem;
+        .main_servicios{
+            height: 81vh;
+        }
+    }
 }

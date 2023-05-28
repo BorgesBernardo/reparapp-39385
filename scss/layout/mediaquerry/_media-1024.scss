@@ -18,10 +18,11 @@
             }
         }
     }
-    }
+}
     .datafiscal{
         padding-left: 100px;
     }
+
     .main_perfil{
         .foto_perfil{
             padding: 1.25rem 2rem;
@@ -42,7 +43,22 @@
         padding: 0px 40px 0px 40px;
     }
 
-    .nosotros{
-        
+
+    .main_nosotros{
+        height: 86vh;
+        .texto_principal{
+            button{
+                margin: 1rem 6rem 0rem 6rem;
+            }
+        }
     }
+    .servicios{
+        .main_servicios{
+            .boton{
+                margin: 20px 0px 20px 0px;
+            }
+        }
+    }
+
+
 }
