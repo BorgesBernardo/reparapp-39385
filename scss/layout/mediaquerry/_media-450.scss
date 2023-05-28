@@ -62,4 +62,18 @@
       text-align: center;
     }
   }
+  .main_perfil{
+    height: 98vh;
+    grid-template-rows: 8rem 8rem 8rem 8rem 8rem 8rem 7rem;
+    .foto_perfil{
+      padding: 0px 0px;
+      margin-top: 15px;
+      img{
+        width: 20rem;
+      }
+    }
+    .datos_perfil{
+      margin: 0px 25px;
+    }
+  }
 }

@@ -23,13 +23,16 @@
         padding-left: 100px;
     }
     .main_perfil{
-        display: flex;
-        flex-direction: column;
+        .foto_perfil{
+            padding: 1.25rem 2rem;
+        }
         .datos_perfil{
-            padding-left: 7%;
+            padding-left: 0rem;
+            margin-right: 1rem;
+            margin-bottom: 0rem;
         }
         .cerrar_sesion{
-            margin-top: 40px;
+            margin-top: 3.5rem;
             p{
                 margin: 10px 0px;
             }
@@ -37,5 +40,9 @@
     }
     .boton-enviar{
         padding: 0px 40px 0px 40px;
+    }
+
+    .nosotros{
+        
     }
 }
