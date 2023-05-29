@@ -1,6 +1,6 @@
 .contacto{
   .main_contacto{
-    height: 76.5vh;
+    height: 76vh;
     background-color:rgba(0, 0, 0, 0.643);
     main{
       h2{
@@ -10,11 +10,12 @@
         margin: 2rem 2rem;
       }
       .datos_contacto{
-        display: flex;
+        @include flex(row,wrap,space-evenly,center,none);
+        /*display: flex;
         flex-direction: row;
         flex-wrap: wrap;
         align-items: center;
-        justify-content: space-evenly;
+        justify-content: space-evenly;*/
         font-family: $roboto;
         font-size: 1.5625rem;
         margin: 3rem 0rem;
@@ -64,11 +65,12 @@
       .contenedor-formulario{
         margin: 2rem 0rem;
         .formulario{
-          display: flex;
+          @include flex(row,wrap,center,none,1.25rem);
+          /*display: flex;
           flex-direction: row;
           flex-wrap: wrap;
           gap: 1.25rem;
-          justify-content: center;
+          justify-content: center;*/
           .nombre-apellido{
             form{
               input{

@@ -2,7 +2,7 @@
   /* ----- Comienza Index ----- */
   .index{
     .main_index{
-      height: 185vh;
+      height: 175vh;
       h2{
         font-size: 2rem;
         text-align: center;
@@ -23,12 +23,16 @@
   /* ----- Comienza Servicios ----- */
   .servicios{
     .main_servicios{ 
-      height: 108vh;
+      height: 100vh;
       h2{
         align-self: center;
       }
+      .servicios_lista{
+        margin: 0rem 1rem 0rem 1rem;
+        gap: 0.5rem;
+      }
       .section2service{
-        margin: 1.875rem 0rem;
+        margin: 2.5rem 0rem;
       }
     }
   }
@@ -43,28 +47,37 @@
           text-align: center;
         }
         .datos_contacto{
-          margin: 1.5rem 0rem 3rem 0rem;
-          .whatsapp{
-            flex-direction: column;
-            text-align: center;
-            p{
-              margin-bottom: 2.5rem;
+          margin: 0rem 0rem 0rem 0rem;
+          @include flex(column,none,none,none,none);
+          /*display: flex;
+          flex-direction: column;*/
+          section{
+            .whatsapp{
+              @include flex(column,none,none,none,none);
+              /*flex-direction: column;*/
+              text-align: center;
+              p{
+                margin-bottom: 2.5rem;
+              }
+            }
+            .email{
+              @include flex(column,none,none,none,none);
+              /*flex-direction: column;*/
+              text-align: center;
+              p{
+                margin-bottom: 2.5rem;
+              }    
+            }
+            .instagram{
+              /*@include flex(column,none,none,none,none);*/
+              flex-direction: column;
+              text-align: center;
+              p{
+                margin-bottom: 1.25rem;
+              }
             }
           }
-          .email{
-            flex-direction: column;
-            text-align: center;
-            p{
-              margin-bottom: 2.5rem;
-            }    
-          }
-          .instagram{
-            flex-direction: column;
-            text-align: center;
-            p{
-              margin-bottom: 1.25rem;
-            }
-          }
+          
         }
         .contenedor-formulario{
           .formulario{
@@ -116,7 +129,7 @@
       grid-template-rows: 8rem 8rem 8rem 8rem 8rem 8rem 7rem;
       .foto_perfil{
         padding: 0rem 0rem;
-        margin-top: .9375rem;
+        margin-top: 0.9375rem;
         img{
           width: 20rem;
         }

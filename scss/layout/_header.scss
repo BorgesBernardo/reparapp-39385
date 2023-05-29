@@ -1,13 +1,14 @@
 .main_navbar{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    margin: auto auto;
-    padding: 1rem;
-    width: 100%;
-    height: 50%;
-    background-color: $background-sitio;
+  @include flex (row,none,space-between,center,none);
+  /*display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;*/
+  margin: auto auto;
+  padding: 1rem;
+  width: 100%;
+  height: 50%;
+  background-color: $background-sitio;
 }
 
 nav #toggle, nav label{
@@ -15,35 +16,36 @@ nav #toggle, nav label{
 }
 
 .reparapp{
+  font-family: $roboto;
+  font-size: 2rem;
+  b{
+    color: $color-selectiontext;
+    font-weight: bold;
     font-family: $roboto;
-    font-size: 2rem;
-    b{
-        color: $color-selectiontext;
-        font-weight: bold;
-        font-family: $roboto;
-    }
+  }
 }
 
 .navbar{
-    list-style: none;
-    display: flex;
-    flex-direction: row;
-    align-items: flex-end;
-    gap: 0.625rem;
-    font-size: 1.25rem;
-    li{
-        a{
-            text-decoration: none;
-            color: $color-texto;
-            font-family: $roboto;
-            .foto-perfil{
-                width: 50px;
-                vertical-align: bottom;
-            }
-        }
+  list-style: none;
+  @include flex (row,none,none,flex-end,0.625rem);
+  /*display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  gap: 0.625rem;*/
+  font-size: 1.25rem;
+  li{
+    a{
+      text-decoration: none;
+      color: $color-texto;
+      font-family: $roboto;
+      .foto-perfil{
+        width: 3.125rem;
+        vertical-align: bottom;
+      }
     }
-    .selectionbotton{
-        color: $color-selectiontext;
-        font-family: $roboto;
-    }
+  }
+  .selectionbotton{
+    color: $color-selectiontext;
+    font-family: $roboto;
+  }
 }

@@ -1,103 +1,103 @@
 .footer_section{
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 1fr;
-    background-color: $background-footer;
-    padding: 0.625rem;
-}
-
-.navbar_footer_main{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1fr;
+  background-color: $background-footer;
+  padding: 0.625rem;
+  .navbar_footer_main{
     grid-column: 1 / 1;
     align-self: center;
-}
-
-.navbar_footer{
-    display: flex;
-    flex-direction: column;
-    gap: 0.3125rem;
-    padding-left: 1.25rem;
-    list-style: none;
-    li{
+    .navbar_footer{
+      @include flex (column,none,none,none,0.3125rem);
+      /*display: flex;
+      flex-direction: column;
+      gap: 0.3125rem;*/
+      padding-left: 1.25rem;
+      list-style: none;
+      li{
         a{
-            text-decoration: none;
-            color: $color-texto;
-            font-size: 1.25rem;
-            font-family: $roboto;
+          text-decoration: none;
+          color: $color-texto;
+          font-size: 1.25rem;
+          font-family: $roboto;
         }
-    }
-    .selectionbotton{
+      }
+      .selectionbotton{
         color:$color-selectiontext;
         font-family: $roboto;
+      }
     }
-}
-
-.ubication{
-    display: flex;
+  }
+  .ubication{
+    @include flex (row,none,center,center,0.625rem);
+    /*display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    gap: 0.625rem;
+    gap: 0.625rem;*/
     font-size: 1.25rem;
-    p{
-        font-family: $roboto;
-    }
-    img{
-        width: 2.5rem;
-    }
     font-family: $roboto;
     grid-column: 2 / 3;
     justify-self: center;
     align-self: center;
-}
-
-.social_orden{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 0.3125rem;
-    a{
-        text-decoration: none;
+    p{
+      font-family: $roboto;
     }
-    .instagram{
-        a{
-            img{
-                width: 3.125rem;
-            }
-        }
+    img{
+      width: 2.5rem;
     }
-    .whatsapp{
-        a{
-            img{
-                width: 4.0625rem;
-            }
-        }
-    }
-    .facebook{
-        a{
-            img{
-                width: 2.8125rem;
-            }
-        }
-    }
-}
-
-.social{
+  }
+  .social{
     grid-column: 3 / 4;
     justify-self: center;
     align-self: center;
-}
-
-.datafiscal{
+    .social_orden{
+      @include flex (row,none,none,center,0.3125rem);
+      /*display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 0.3125rem;*/
+      a{
+        text-decoration: none;
+      }
+      .instagram{
+        a{
+          img{
+            width: 3.125rem;
+          }
+        }
+      }
+      .whatsapp{
+        a{
+          img{
+            width: 4.0625rem;
+          }
+        }
+      }
+      .facebook{
+        a{
+          img{
+            width: 2.8125rem;
+          }
+        }
+      }
+    }
+  }
+  .datafiscal{
     grid-column: 4 / 5;
     justify-self: center;
-    display: flex;
+    @include flex (column,none,flex-end,none,none);
+    /*display: flex;
     flex-direction: column;
-    font-family: $roboto;
-    justify-content: flex-end;
+    justify-content: flex-end;*/
     padding-left: 8.125rem;
     a{
-        list-style: none;
-        text-decoration: none;
-        color: $color-texto;
+      list-style: none;
+      text-decoration: none;
+      color: $color-texto;
+      p{
+        font-family: $roboto;
+      }
     }
+  }
 }

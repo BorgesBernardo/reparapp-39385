@@ -19,10 +19,11 @@
       grid-row: 1 / 4;
       justify-content: center;
       text-decoration: none;
-      display: flex;
+      @include flex(column,none,none,none,1.25rem);
+      /*display: flex;
       flex-direction: column;
+      gap: 1.25rem;*/     
       font-size: 1.25rem;
-      gap: 1.25rem;
       .datos{
         font-weight: bold;
         text-decoration: underline;

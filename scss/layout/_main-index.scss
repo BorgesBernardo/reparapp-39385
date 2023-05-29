@@ -1,7 +1,7 @@
 .index{
   .main_index{
     background-color:rgba(0, 0, 0, 0.643);
-    height: 76.5vh;
+    height: 76vh;
     h2{
       font-family: $roboto;
       font-size: 3rem;
@@ -22,28 +22,29 @@
       margin:2rem 0rem 2.5rem 0rem;
     }
     .profesionales_lista{
-      margin-top: 6.25rem;
+      margin-top: 5.5rem;
       .contenedor-profesionales{
-        display: flex;
+        @include flex (row,wrap,center,center,1.5625rem);
+        /*display: flex;
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: center;
-        gap: 20px;
-        align-content: center;
+        gap: 1.5625rem;
+        align-content: center;*/
       }
       .profesional{
         text-align: center;
         gap: 1rem;
         img{
-            width: 9.375rem;
+          width: 9.375rem;
         }
         h4{
-            font-family: $roboto;
-            font-size: 1.5rem;
+          font-family: $roboto;
+          font-size: 1.5rem;
         }
         p{
-            font-family: $roboto;
-            font-size: 1rem;
+          font-family: $roboto;
+          font-size: 1rem;
         }
       }
       .profesional:hover{

@@ -1,11 +1,11 @@
 @media(max-width: 375px){
   /* ----- Comienza Index ----- */
   .index{
+    grid-template-rows: 4.8rem 1fr 32.7rem;
     .main_index{
-      height: 185vh;
       .profesionales_lista{
         .contenedor-profesionales{
-          margin: 0rem 5rem;
+          margin: 0rem 2rem;
           .profesional{
             width: 12.5rem;
           }
@@ -21,10 +21,11 @@
         grid-row: 1 / 2;
         margin: 1.25rem 0rem;
         .navbar_footer{
-          flex-direction: row;
+          @include flex(row,wrap,center,none,none);
+          /*flex-direction: row;
           flex-wrap: wrap;
+          justify-content: center;*/
           margin: 0rem 3.125rem;
-          justify-content: center;
         }
       }
       .ubication{
@@ -54,4 +55,235 @@
     }
   }
   /* ----- Termina Index ----- */
+
+  /* ----- Comienza Servicios ----- */
+  .servicios{
+    .main_servicios{
+      height: 108vh;
+    }
+    .footer_section{
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: auto auto auto;
+      .navbar_footer_main{
+        grid-column: 1 / 1;
+        grid-row: 1 / 2;
+        margin: 1.25rem 0rem;
+        .navbar_footer{
+          @include flex(row,wrap,center,none,none);
+          /*flex-direction: row;
+          flex-wrap: wrap;
+          justify-content: center;*/
+          margin: 0rem 3.125rem;
+        }
+      }
+      .ubication{
+        grid-column: 1 / 1;
+        grid-row: 2 / 3;
+        margin: 1.25rem 0rem;
+      }
+      .social{
+        grid-column: 1 / 1;
+        grid-row: 3 / 4;
+        margin: 1.25rem 0rem;
+      }
+      .datafiscal{
+        grid-column: 1 / 1;
+        grid-row: 4 / 5;
+        margin: 1.25rem 0rem;
+        justify-items: center;
+        padding-left: 0rem;
+        section{
+          a{
+            p{
+              text-align: center;
+            }
+          }
+        }
+      }
+    }
+  }
+  /* ----- Termina Servicios ----- */
+
+    /* ----- Comienza Contacto ----- */
+    .contacto{
+      .main_contacto{
+        height: 128vh;
+        main{
+          .contenedor-formulario{
+            .formulario{
+              justify-content: center;
+              padding-left: 0.5rem;
+              .nombre-apellido{
+                form{
+                  input{
+                    padding: 0.625rem 7rem 0.625rem 0.3125rem;
+                  }
+                }
+              }
+              .email-telefono{
+                form{
+                  input{
+                    padding: 0.625rem 7rem 0.625rem 0.3125rem;
+                  }
+                }
+              }
+              .mensaje{
+                textarea{
+                  padding: 0.3125rem 2rem 0.3125rem 0.3125rem;
+                }
+              }
+            }
+          }
+        }
+      }
+      .footer_section{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto;
+        .navbar_footer_main{
+          grid-column: 1 / 1;
+          grid-row: 1 / 2;
+          margin: 1.25rem 0rem;
+          .navbar_footer{
+            @include flex(row,wrap,center,none,none);
+            /*flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;*/
+            margin: 0rem 3.125rem;
+          }
+        }
+        .ubication{
+          grid-column: 1 / 1;
+          grid-row: 2 / 3;
+          margin: 1.25rem 0rem;
+        }
+        .social{
+          grid-column: 1 / 1;
+          grid-row: 3 / 4;
+          margin: 1.25rem 0rem;
+        }
+        .datafiscal{
+          grid-column: 1 / 1;
+          grid-row: 4 / 5;
+          margin: 1.25rem 0rem;
+          justify-items: center;
+          padding-left: 0rem;
+          section{
+            a{
+              p{
+                text-align: center;
+              }
+            }
+          }
+        }
+      }
+    }
+  /* ----- Termina Contacto ----- */
+
+    /* ----- Comienza Nosotros ----- */
+    .nosotros{
+      .main_nosotros{
+        height: 170vh;
+      }
+      .footer_section{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto;
+        .navbar_footer_main{
+          grid-column: 1 / 1;
+          grid-row: 1 / 2;
+          margin: 1.25rem 0rem;
+          .navbar_footer{
+            @include flex(row,wrap,center,none,none);
+            /*flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;*/
+            margin: 0rem 3.125rem;
+          }
+        }
+        .ubication{
+          grid-column: 1 / 1;
+          grid-row: 2 / 3;
+          margin: 1.25rem 0rem;
+        }
+        .social{
+          grid-column: 1 / 1;
+          grid-row: 3 / 4;
+          margin: 1.25rem 0rem;
+        }
+        .datafiscal{
+          grid-column: 1 / 1;
+          grid-row: 4 / 5;
+          margin: 1.25rem 0rem;
+          justify-items: center;
+          padding-left: 0rem;
+          section{
+            a{
+              p{
+                text-align: center;
+              }
+            }
+          }
+        }
+      }
+    }
+  /* ----- Termina Nosotros ----- */
+
+    /* ----- Comienza Perfil ----- */
+    .perfil{
+      .main_perfil{
+        grid-template-rows: 8rem 8rem 8rem 8rem 8rem 8rem 9.3rem;
+        .foto_perfil{
+          img{
+            width: 18rem;
+          }
+        }
+        .datos_perfil{
+          margin: 2rem 1.5625rem;
+        }
+      }
+      .footer_section{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto;
+        .navbar_footer_main{
+          grid-column: 1 / 1;
+          grid-row: 1 / 2;
+          margin: 1.25rem 0rem;
+          .navbar_footer{
+            @include flex(row,wrap,center,none,none);
+            /*flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;*/
+            margin: 0rem 3.125rem;
+          }
+        }
+        .ubication{
+          grid-column: 1 / 1;
+          grid-row: 2 / 3;
+          margin: 1.25rem 0rem;
+        }
+        .social{
+          grid-column: 1 / 1;
+          grid-row: 3 / 4;
+          margin: 1.25rem 0rem;
+        }
+        .datafiscal{
+          grid-column: 1 / 1;
+          grid-row: 4 / 5;
+          margin: 1.25rem 0rem;
+          justify-items: center;
+          padding-left: 0rem;
+          section{
+            a{
+              p{
+                text-align: center;
+              }
+            }
+          }
+        }
+      }
+    }
+  /* ----- Termina Perfil ----- */
 }

@@ -2,10 +2,10 @@
   /* ----- Comienza Index ----- */
   .index{
     .main_index{
-      height: 110vh;
+      height: 105vh;
       .profesionales_lista{
         .contenedor-profesionales{
-            margin: 0rem 1.875rem;
+          margin: 0rem 1.875rem;
         }
       }
     }
@@ -14,15 +14,16 @@
       grid-template-columns: repeat(2, 1fr);
       grid-template-rows: repeat(2, 1fr);
       .navbar_footer_main{
-          text-align: center;
+        text-align: center;
       }
       .social{
         grid-column: 1 / 2;
         grid-row: 2 / 3;
         .social_orden{
-          flex-direction: row;
+          @include flex(row,none,none,center,0.9375rem);
+          /*flex-direction: row;
           align-items: center;
-          gap: 0.9375rem;
+          gap: 0.9375rem;*/
         }
       }
       .datafiscal{
@@ -38,7 +39,7 @@
     .main_servicios{
       height: 105vh;
       .servicios_lista{
-        margin: 1.5625rem 0rem 2.1875rem 0rem;
+        margin: 1.5625rem 3rem 2.1875rem 3rem;
       }
       .section2service{
         padding: 0rem .625rem;
@@ -53,15 +54,16 @@
       grid-template-columns: repeat(2, 1fr);
       grid-template-rows: repeat(2, 1fr);
       .navbar_footer_main{
-          text-align: center;
+        text-align: center;
       }
       .social{
         grid-column: 1 / 2;
         grid-row: 2 / 3;
         .social_orden{
-          flex-direction: row;
+          @include flex(row,none,none,center,0.9375rem);
+          /*flex-direction: row;
           align-items: center;
-          gap: 0.9375rem;
+          gap: 0.9375rem;*/
         }
       }
       .datafiscal{
@@ -106,15 +108,16 @@
       grid-template-columns: repeat(2, 1fr);
       grid-template-rows: repeat(2, 1fr);
       .navbar_footer_main{
-          text-align: center;
+        text-align: center;
       }
       .social{
         grid-column: 1 / 2;
         grid-row: 2 / 3;
         .social_orden{
-          flex-direction: row;
+          @include flex(row,none,none,center,0.9375rem);
+          /*flex-direction: row;
           align-items: center;
-          gap: 0.9375rem;
+          gap: 0.9375rem;*/
         }
       }
       .datafiscal{
@@ -142,7 +145,7 @@
       grid-template-columns: repeat(2, 1fr);
       grid-template-rows: repeat(2, 1fr);
       .navbar_footer_main{
-          text-align: center;
+        text-align: center;
       }
       .social{
         grid-column: 1 / 2;
@@ -160,4 +163,31 @@
     }
   }
   /* ----- Termina Nosotros ----- */
+
+  /* ----- Comienza Perfil ----- */
+  .perfil{
+    .footer_section{
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+      .navbar_footer_main{
+        text-align: center;
+      }
+      .social{
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
+        .social_orden{
+          @include flex(row,none,none,center,0.9375rem);
+          /*flex-direction: row;
+          align-items: center;
+          gap: 0.9375rem;*/
+        }
+      }
+      .datafiscal{
+        grid-column: 2 / 3;
+        grid-row: 2 / 3;
+      }
+    }
+  }
+  /* ----- Termina Perfil ----- */
 }

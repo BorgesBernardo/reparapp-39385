@@ -10,6 +10,9 @@
         text-align: center;
         padding-left: 0rem;
       }
+      .profesionales_lista{
+        margin-top: 4.25rem;
+      }
     }
     .footer_section{
       .navbar_footer_main{
@@ -20,14 +23,16 @@
         }
       }
       .ubication{
-        display: flex;
-        flex-direction: column;
+        @include flex(column,none,none,none,none);
+        /*display: flex;
+        flex-direction: column;*/
       }
       .social{
         .social_orden{
-          flex-direction: column;
+          @include flex(column,none,none,center,0.3125rem);
+          /*flex-direction: column;
           align-items: center;
-          gap: 0.3125rem;
+          gap: 0.3125rem;*/
         }
       }
       .datafiscal{
@@ -61,14 +66,16 @@
         }
       }
       .ubication{
-        display: flex;
-        flex-direction: column;
+        @include flex(column,none,none,none,none);
+        /*display: flex;
+        flex-direction: column;*/
       }
       .social{
         .social_orden{
-          flex-direction: column;
+          @include flex(column,none,none,center,0.3125rem);
+          /*flex-direction: column;
           align-items: center;
-          gap: 0.3125rem;
+          gap: 0.3125rem;*/
         }
       }
       .datafiscal{
@@ -106,14 +113,16 @@
         }
       }
       .ubication{
-        display: flex;
-        flex-direction: column;
+        @include flex(column,none,none,none,none);
+        /*display: flex;
+        flex-direction: column;*/
       }
       .social{
         .social_orden{
-          flex-direction: column;
+          @include flex(column,none,none,center,0.3125rem);
+          /*flex-direction: column;
           align-items: center;
-          gap: 0.3125rem;
+          gap: 0.3125rem;*/
         }
       }
       .datafiscal{
@@ -133,7 +142,7 @@
         text-align: center;
       }
       .container_subtitulo{
-        margin: .625rem 1.875rem .625rem 1.875rem;
+        margin: 0.625rem 1.875rem 0.625rem 1.875rem;
         h3{
           text-align: center;
         }
@@ -154,14 +163,16 @@
         }
       }
       .ubication{
-        display: flex;
-        flex-direction: column;
+        @include flex(column,none,none,none,none);
+        /*display: flex;
+        flex-direction: column;*/
       }
       .social{
         .social_orden{
-          flex-direction: column;
+          @include flex(column,none,none,center,0.3125rem);
+          /*flex-direction: column;
           align-items: center;
-          gap: 0.3125rem;
+          gap: 0.3125rem;*/
         }
       }
       .datafiscal{
@@ -205,14 +216,16 @@
         }
       }
       .ubication{
-        display: flex;
-        flex-direction: column;
+        @include flex(column,none,none,none,none);
+        /*display: flex;
+        flex-direction: column;*/
       }
       .social{
         .social_orden{
-          flex-direction: column;
+          @include flex(column,none,none,center,03125rem);
+          /*flex-direction: column;
           align-items: center;
-          gap: 0.3125rem;
+          gap: 0.3125rem;*/
         }
       }
       .datafiscal{
@@ -223,30 +236,3 @@
   }
   /* ----- Termina Perfil ----- */
 }
-
-/*
-.footer_section{
-  .navbar_footer_main{
-    .navbar_footer{
-      gap: 0.9375rem;
-      padding-left: 1.25rem;
-      font-size: 0.9375rem;
-    }
-  }
-  .ubication{
-    display: flex;
-    flex-direction: column;
-  }
-  .social{
-    .social_orden{
-      flex-direction: column;
-      align-items: center;
-      gap: 0.3125rem;
-    }
-  }
-  .datafiscal{
-    padding-left: 1.25rem;
-    align-self: center;
-  }
-}
-*/
