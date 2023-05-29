@@ -1,11 +1,12 @@
 @media(max-width: 549px){
+  /* ----- Comienza Index ----- */
   .index{
     .main_index{
       height: 110vh;
-    }
-    .profesionales_lista{
-      .contenedor-profesionales{
-          margin: 0px 30px;
+      .profesionales_lista{
+        .contenedor-profesionales{
+            margin: 0rem 1.875rem;
+        }
       }
     }
     .footer_section{
@@ -30,27 +31,101 @@
       }
     }
   }
+  /* ----- Termina Index ----- */
 
+  /* ----- Comienza Servicios ----- */
   .servicios{
     .main_servicios{
       height: 105vh;
       .servicios_lista{
-        margin: 25px 0px 35px 0px;
+        margin: 1.5625rem 0rem 2.1875rem 0rem;
       }
       .section2service{
-        padding: 0px 10px;
-        margin: 10px 0px;
+        padding: 0rem .625rem;
+        margin: .625rem 0rem;
+      }
+      .boton{
+        margin: 1.25rem 0rem;
+      }
+    }
+    .footer_section{
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+      .navbar_footer_main{
+          text-align: center;
+      }
+      .social{
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
+        .social_orden{
+          flex-direction: row;
+          align-items: center;
+          gap: 0.9375rem;
+        }
+      }
+      .datafiscal{
+        grid-column: 2 / 3;
+        grid-row: 2 / 3;
       }
     }
   }
+  /* ----- Termina Servicios ----- */
 
-  .boton{
-    margin: 20px 0px;
+  /* ----- Comienza Contacto ----- */
+  .contacto{
+    .main_contacto{
+      main{
+        .contenedor-formulario{
+          .formulario{
+            .nombre-apellido{
+              form{
+                input{
+                  padding: 0.625rem 15rem 0.625rem 0.3125rem;
+                }
+              }
+            }
+            .email-telefono{
+              form{
+                input{
+                  padding: 0.625rem 15rem 0.625rem 0.3125rem;
+                }
+              }
+            }
+            .mensaje{
+              textarea{
+                padding: 0.3125rem 9.75rem 0.3125rem 0.3125rem;
+              }
+            }
+          }
+        }
+      }
+    }
+    .footer_section{
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+      .navbar_footer_main{
+          text-align: center;
+      }
+      .social{
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
+        .social_orden{
+          flex-direction: row;
+          align-items: center;
+          gap: 0.9375rem;
+        }
+      }
+      .datafiscal{
+        grid-column: 2 / 3;
+        grid-row: 2 / 3;
+      }
+    }
   }
-  .boton_descarga_nosotros{
-    margin: 5% 8%;
-  }
+  /* ----- Termina Contacto ----- */
 
+  /* ----- Comienza Nosotros ----- */
   .nosotros{
     grid-template-rows: 4.75rem 1fr 8.1rem;
     .main_nosotros{
@@ -58,39 +133,31 @@
       .texto_principal{
         button{
           font-size: 1.2rem;
-          margin: 20px 20px 30px 20px;
+          margin: 1.25rem 1.25rem 1.875rem 1.25rem;
         }
       }
     }
-  }
-
-.contacto{
-    .main_contacto{
-        main{
-            .contenedor-formulario{
-                .formulario{
-                    .nombre-apellido{
-                        form{
-                            input{
-                                padding: 0.625rem 15rem 0.625rem 0.3125rem;
-                            }
-                        }
-                    }
-                    .email-telefono{
-                        form{
-                            input{
-                                padding: 0.625rem 15rem 0.625rem 0.3125rem;
-                            }
-                        }
-                    }
-                    .mensaje{
-                        textarea{
-                            padding: 0.3125rem 9.75rem 0.3125rem 0.3125rem;
-                        }
-                    }
-                }
-            }
+    .footer_section{
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+      .navbar_footer_main{
+          text-align: center;
+      }
+      .social{
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
+        .social_orden{
+          flex-direction: row;
+          align-items: center;
+          gap: 0.9375rem;
         }
+      }
+      .datafiscal{
+        grid-column: 2 / 3;
+        grid-row: 2 / 3;
+      }
     }
-}
+  }
+  /* ----- Termina Nosotros ----- */
 }

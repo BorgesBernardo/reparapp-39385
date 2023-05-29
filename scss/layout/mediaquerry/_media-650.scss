@@ -1,86 +1,100 @@
 @media(max-width:650px){
-    .index{
-        grid-template-rows: 4.75rem 1fr 8.1rem;
-    }
-    nav .menu{
-        width: 100%;
-        height: 0;
-        overflow: hidden;
-    }
-    .menu ul{
-        flex-direction: column;
-        align-items: center;
-        /*padding: 0.5rem 0;*/
-    }
-    nav label{
-        display: inline-flex;
-        color: white;
-        cursor: pointer;
-    }
-    nav #toggle:checked ~ .menu{
-        height: 100%;
-    }
-    .nav_img{
-        padding-left: 50px;
-    }
-    .boton-enviar{
-        padding: 0px 40px 0px 40px;
-    }
-    .perfil{
-        grid-template-rows: 4.75rem 1fr 8.1rem;
-    }
-    .nosotros{
-        grid-template-rows: 4.75rem 1fr 8.1rem;
-        .main_nosotros{
-            height: 108vh;
-            .texto_principal{
-                button{
-                    font-size: 1.2rem;
-                    margin: 20px 20px 30px 20px;
-                }
-            }
-        }
-    }
-    .contacto{
-        grid-template-rows: 4.75rem 1fr 8.1rem;
-        .main_contacto{
-            height: 103vh;
-            main{
-                .datos_contacto{
-                    margin: 3rem 0rem;
-                }
-                .contenedor-formulario{
-                    .formulario{
-                        .nombre-apellido{
-                            form{
-                                input{
-                                    padding: 0.625rem 20rem 0.625rem 0.3125rem;
-                                }
-                            }
-                        }
-                        .email-telefono{
-                            form{
-                                input{
-                                    padding: 0.625rem 20rem 0.625rem 0.3125rem;
-                                }
-                            }
-                        }
-                        .mensaje{
-                            textarea{
-                                padding: 0.3125rem 14.75rem 0.3125rem 0.3125rem;
-                            }
-                        }
-                    }
-                }
-            }
-            
-        }
-    }
+  /* ----- Comienza Index ----- */
+  .index{
+    grid-template-rows: 4.75rem 1fr 8.1rem;
+  } 
+  /* ----- Termina Index ----- */
 
-    .servicios{
-        grid-template-rows: 4.75rem 1fr 8.1rem;
-        .main_servicios{
-            height: 81vh;
-        }
+  /* ----- Comienza Servicios ----- */
+  .servicios{
+    grid-template-rows: 4.75rem 1fr 8.1rem;
+    .main_servicios{
+      height: 81vh;
     }
+  }
+  /* ----- Termina Servicios ----- */
+
+  /* ----- Comienza Contacto ----- */
+  .contacto{
+    grid-template-rows: 4.75rem 1fr 8.1rem;
+    .main_contacto{
+      height: 103vh;
+      main{
+        .datos_contacto{
+          margin: 3rem 0rem;
+        }
+        .contenedor-formulario{
+          .formulario{
+            .nombre-apellido{
+              form{
+                input{
+                  padding: 0.625rem 20rem 0.625rem 0.3125rem;
+                }
+              }
+            }
+            .email-telefono{
+              form{
+                input{
+                  padding: 0.625rem 20rem 0.625rem 0.3125rem;
+                }
+              }
+            }
+            .mensaje{
+              textarea{
+                padding: 0.3125rem 14.75rem 0.3125rem 0.3125rem;
+              }
+            }
+            .boton-enviar{
+              padding: 0rem 2.5rem 0rem 2.5rem;
+            }
+          }
+        }
+      }
+    }
+  }
+  /* ----- Termina Contacto ----- */
+
+  /* ----- Comienza Nosotros ----- */
+  .nosotros{
+    grid-template-rows: 4.75rem 1fr 8.1rem;
+    .main_nosotros{
+      height: 108vh;
+      .texto_principal{
+        button{
+          font-size: 1.2rem;
+          margin: 1.25rem 1.25rem 1.875rem 1.25rem;
+        }
+      }
+    }
+  }
+  /* ----- Termina Nosotros ----- */
+  
+  /* ----- Comienza Perfil ----- */
+  .perfil{
+    grid-template-rows: 4.75rem 1fr 8.1rem;
+  }
+  /* ----- Comienza Menu Hamburguesa ----- */
+  nav .menu{
+    width: 100%;
+    height: 0;
+    overflow: hidden;
+  }
+  .menu ul{
+      flex-direction: column;
+      align-items: center;
+      /*padding: 0.5rem 0;*/
+  }
+  nav label{
+      display: inline-flex;
+      color: white;
+      cursor: pointer;
+  }
+  nav #toggle:checked ~ .menu{
+      height: 100%;
+  }
+  .nav_img{
+      padding-left: 50px;
+  } 
+  /* ----- Termina Menu Hamburguesa ----- */
+  
 }

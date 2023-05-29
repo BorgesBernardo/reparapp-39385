@@ -1,46 +1,48 @@
-.main_nosotros{
+.nosotros{
+  .main_nosotros{
     height: 76.5vh;
     background-color:rgba(0, 0, 0, 0.773);
     h2{
-        padding: 1.875rem 1.25rem 1.25rem 1.25rem;
-        font-size: 1.875rem;
-        font-family: $roboto;
+      padding: 1.875rem 1.25rem 1.25rem 1.25rem;
+      font-size: 1.875rem;
+      font-family: $roboto;
     }
     .conteiner_subtitulo{
-        margin: 10px 10px 0px 10px;
-        h3{
-            font-size: 1.875rem;
-            font-family: $roboto;
-            color: $color-selectiontext;
-            text-align: center;
-        }
+      margin: 10px 10px 0px 10px;
+      h3{
+        font-size: 1.875rem;
+        font-family: $roboto;
+        color: $color-selectiontext;
+        text-align: center;
+      }
     }
     .texto_principal{
-        display: flex;
-        flex-direction: column;
-        gap: 1rem;
-        padding: 0rem 0.2rem;
-        font-size: 1.2rem;
-        font-family: $roboto;
-        margin: 1.25rem 0.5rem 1.8rem 0.5rem;
-        p{
-            margin: 10px 0px 0px 0px;
-        }
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      padding: 0rem 0.2rem;
+      font-size: 1.2rem;
+      font-family: $roboto;
+      margin: 1.25rem 0.5rem 1.8rem 0.5rem;
+      p{
+        margin: 10px 0px 0px 0px;
+      }
     }
     button{
-        font-weight: bold;
-        justify-items: center;
-        text-align: center;
-        background-color: $color-botones;
-        margin: 1rem 15rem 0rem 15rem;
-        padding: 20px 20px;
-        font-size: 1.5rem;
-        border-style: none;
-        border-radius: 1.25rem;
-        color:$background-sitio;
+      font-weight: bold;
+      justify-items: center;
+      text-align: center;
+      background-color: $color-botones;
+      margin: 1rem 15rem 0rem 15rem;
+      padding: 20px 20px;
+      font-size: 1.5rem;
+      border-style: none;
+      border-radius: 1.25rem;
+      color:$background-sitio;
     }
-    .boton_descarga_nosotros:hover{
-        transform: scale(1.1);
-        box-shadow: 0.125rem 0.125rem 1.875rem rgba(255, 255, 255, 0.377);
+    button:hover{
+      transform: scale(1.1);
+      box-shadow: 0.125rem 0.125rem 1.875rem rgba(255, 255, 255, 0.377);
     }
+  }
 }

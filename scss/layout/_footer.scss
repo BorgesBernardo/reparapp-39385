@@ -88,16 +88,16 @@
 }
 
 .datafiscal{
+    grid-column: 4 / 5;
+    justify-self: center;
     display: flex;
     flex-direction: column;
     font-family: $roboto;
     justify-content: flex-end;
+    padding-left: 8.125rem;
     a{
         list-style: none;
         text-decoration: none;
         color: $color-texto;
     }
-    grid-column: 4 / 5;
-    justify-self: center;
-    padding-left: 8.125rem;
 }

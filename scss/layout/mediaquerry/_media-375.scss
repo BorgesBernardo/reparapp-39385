@@ -1,52 +1,57 @@
 @media(max-width: 375px){
-  .main_index{
-    height: 185vh;
-  }
-  .contenedor-profesionales{
-    margin: 0px 80px;
-}
-  .profesional{
-    width: 200px;
-  }
-
-  .footer_section{
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto auto auto;
-    .navbar_footer_main{
-      grid-column: 1 / 1;
-      grid-row: 1 / 2;
-      margin: 20px 0px;
-      .navbar_footer{
-        flex-direction: row;
-        flex-wrap: wrap;
-        margin: 0px 50px;
-        justify-content: center;
+  /* ----- Comienza Index ----- */
+  .index{
+    .main_index{
+      height: 185vh;
+      .profesionales_lista{
+        .contenedor-profesionales{
+          margin: 0rem 5rem;
+          .profesional{
+            width: 12.5rem;
+          }
+        }
       }
     }
-    .ubication{
-      grid-column: 1 / 1;
-      grid-row: 2 / 3;
-      margin: 20px 0px;
-    }
-    .social{
-      grid-column: 1 / 1;
-      grid-row: 3 / 4;
-      margin: 20px 0px;
-    }
-    .datafiscal{
-      grid-column: 1 / 1;
-      grid-row: 4 / 5;
-      margin: 20px 0px;
-      justify-items: center;
-      padding-left: 0px;
-      section{
-        a{
-          p{
-            text-align: center;
+    .footer_section{
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: auto auto auto;
+      .navbar_footer_main{
+        grid-column: 1 / 1;
+        grid-row: 1 / 2;
+        margin: 1.25rem 0rem;
+        .navbar_footer{
+          flex-direction: row;
+          flex-wrap: wrap;
+          margin: 0rem 3.125rem;
+          justify-content: center;
+        }
+      }
+      .ubication{
+        grid-column: 1 / 1;
+        grid-row: 2 / 3;
+        margin: 1.25rem 0rem;
+      }
+      .social{
+        grid-column: 1 / 1;
+        grid-row: 3 / 4;
+        margin: 1.25rem 0rem;
+      }
+      .datafiscal{
+        grid-column: 1 / 1;
+        grid-row: 4 / 5;
+        margin: 1.25rem 0rem;
+        justify-items: center;
+        padding-left: 0rem;
+        section{
+          a{
+            p{
+              text-align: center;
+            }
           }
         }
       }
     }
   }
+  /* ----- Termina Index ----- */
 }

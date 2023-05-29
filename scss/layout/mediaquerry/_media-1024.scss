@@ -1,64 +1,91 @@
 @media(max-width:1024px){
-.main_index{
-    height: 85vh;
-    h2{
+  /* ----- Comienza Index ----- */
+  .index{
+    .main_index{
+      height: 85vh;
+      h2{
         font-size: 3rem;
         margin: 0rem 0rem 0rem 0rem;
-    }
-    h3{
+      }
+      h3{
         margin:1.25rem 0rem 0.9rem 0rem;
-    }
-    .profesionales_lista{
+      }
+      .profesionales_lista{
         gap: 1rem;
         .profesional{
-            section{
-                img{
-                    width: 9.375rem;
-                }
+          section{
+            img{
+              width: 9.375rem;
             }
+          }
         }
+      }
     }
-}
-    .datafiscal{
-        padding-left: 100px;
+    .footer_section{
+      .datafiscal{
+          padding-left: 6.25rem;
+      }
     }
+  }
+  /* ----- Termina Index ----- */
 
-    .main_perfil{
-        .foto_perfil{
-            padding: 1.25rem 2rem;
-        }
-        .datos_perfil{
-            padding-left: 0rem;
-            margin-right: 1rem;
-            margin-bottom: 0rem;
-        }
-        .cerrar_sesion{
-            margin-top: 3.5rem;
-            p{
-                margin: 10px 0px;
+  /* ----- Comienza Servicios ----- */
+  .servicios{
+    .main_servicios{
+      .boton{
+        margin: 1.25rem 0rem 1.25rem 0rem;
+      }
+    }
+  }
+  /* ----- Termina Servicios ----- */
+
+  /* ----- Comienza Contacto ----- */
+  .contacto{
+    .main_contacto{
+      main{
+        .contenedor-formulario{
+          .formulario{
+            .boton-enviar{
+              padding: 0rem 2.5rem 0rem 2.5rem;
             }
+          }
         }
+      }
     }
-    .boton-enviar{
-        padding: 0px 40px 0px 40px;
-    }
+  }
+  /* ----- Termina Contacto ----- */
 
-
+  /* ----- Comienza Nosotros----- */
+  .nosotros{
     .main_nosotros{
-        height: 86vh;
-        .texto_principal{
-            button{
-                margin: 1rem 6rem 0rem 6rem;
-            }
+      height: 86vh;
+      .texto_principal{
+        button{
+          margin: 1rem 6rem 0rem 6rem;
         }
+      }
     }
-    .servicios{
-        .main_servicios{
-            .boton{
-                margin: 20px 0px 20px 0px;
-            }
+  }
+  /* ----- Termina Nosotros ----- */
+  
+  /* ----- Comienza Perfil ----- */
+  .perfil{
+    .main_perfil{
+      .foto_perfil{
+        padding: 1.25rem 2rem;
+      }
+      .datos_perfil{
+        padding-left: 0rem;
+        margin-right: 1rem;
+        margin-bottom: 0rem;
+      }
+      .cerrar_sesion{
+        margin-top: 3.5rem;
+        p{
+          margin: 10px 0px;
         }
+      }
     }
-
-
+  }
+  /* ----- Termina Perfil ----- */
 }
