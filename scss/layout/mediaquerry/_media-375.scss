@@ -147,9 +147,6 @@
           margin: 1.25rem 0rem;
           .navbar_footer{
             @include flex(row,wrap,center,none,none);
-            /*flex-direction: row;
-            flex-wrap: wrap;
-            justify-content: center;*/
             margin: 0rem 3.125rem;
           }
         }
@@ -196,9 +193,6 @@
           margin: 1.25rem 0rem;
           .navbar_footer{
             @include flex(row,wrap,center,none,none);
-            /*flex-direction: row;
-            flex-wrap: wrap;
-            justify-content: center;*/
             margin: 0rem 3.125rem;
           }
         }
@@ -253,9 +247,6 @@
           margin: 1.25rem 0rem;
           .navbar_footer{
             @include flex(row,wrap,center,none,none);
-            /*flex-direction: row;
-            flex-wrap: wrap;
-            justify-content: center;*/
             margin: 0rem 3.125rem;
           }
         }

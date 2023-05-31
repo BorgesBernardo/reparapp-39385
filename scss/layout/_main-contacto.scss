@@ -1,21 +1,15 @@
 .contacto{
   .main_contacto{
-    height: 76vh;
+    height: 76.4vh;
     background-color:rgba(0, 0, 0, 0.643);
     main{
       h2{
         font-size: 1.875rem;
-        padding: 1.25rem 1.25rem;
+        padding: 3rem 3rem;
         font-family: $roboto;
-        margin: 2rem 2rem;
       }
       .datos_contacto{
         @include flex(row,wrap,space-evenly,center,none);
-        /*display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        align-items: center;
-        justify-content: space-evenly;*/
         font-family: $roboto;
         font-size: 1.5625rem;
         margin: 3rem 0rem;
@@ -48,12 +42,9 @@
             }
           }
           .instagram{
-            display: flex;
-            flex-direction: row;
+            @extend .whatsapp;
             p{
-              padding-top: 0.75rem;
-              padding-left: 0.9375rem;
-              font-family: $roboto;
+              margin-top:0rem;
             }
             img{
               width: 3.75rem;
@@ -66,11 +57,6 @@
         margin: 2rem 0rem;
         .formulario{
           @include flex(row,wrap,center,none,1.25rem);
-          /*display: flex;
-          flex-direction: row;
-          flex-wrap: wrap;
-          gap: 1.25rem;
-          justify-content: center;*/
           .nombre-apellido{
             form{
               input{

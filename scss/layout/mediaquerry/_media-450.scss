@@ -41,7 +41,7 @@
   /* ----- Comienza Contacto ----- */
   .contacto{
     .main_contacto{ 
-      height: 125vh;
+      height: 130vh;
       main{
         h2{
           text-align: center;
@@ -49,12 +49,9 @@
         .datos_contacto{
           margin: 0rem 0rem 0rem 0rem;
           @include flex(column,none,none,none,none);
-          /*display: flex;
-          flex-direction: column;*/
           section{
             .whatsapp{
               @include flex(column,none,none,none,none);
-              /*flex-direction: column;*/
               text-align: center;
               p{
                 margin-bottom: 2.5rem;
@@ -62,16 +59,13 @@
             }
             .email{
               @include flex(column,none,none,none,none);
-              /*flex-direction: column;*/
               text-align: center;
               p{
                 margin-bottom: 2.5rem;
               }    
             }
             .instagram{
-              /*@include flex(column,none,none,none,none);*/
-              flex-direction: column;
-              text-align: center;
+              @include flex(column,none,none,center,none);
               p{
                 margin-bottom: 1.25rem;
               }

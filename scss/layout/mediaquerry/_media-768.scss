@@ -24,15 +24,10 @@
       }
       .ubication{
         @include flex(column,none,none,none,none);
-        /*display: flex;
-        flex-direction: column;*/
       }
       .social{
         .social_orden{
           @include flex(column,none,none,center,0.3125rem);
-          /*flex-direction: column;
-          align-items: center;
-          gap: 0.3125rem;*/
         }
       }
       .datafiscal{
@@ -67,15 +62,10 @@
       }
       .ubication{
         @include flex(column,none,none,none,none);
-        /*display: flex;
-        flex-direction: column;*/
       }
       .social{
         .social_orden{
           @include flex(column,none,none,center,0.3125rem);
-          /*flex-direction: column;
-          align-items: center;
-          gap: 0.3125rem;*/
         }
       }
       .datafiscal{
@@ -92,10 +82,9 @@
       main{
         h2{
           text-align: center;
-          margin: 2rem 0rem;
         }
         .datos_contacto{
-          margin: 1.5rem 5rem 3rem 5rem;
+          margin: 0rem 5rem 3rem 5rem;
         }
         .formulario{
           .boton-enviar{
@@ -114,15 +103,10 @@
       }
       .ubication{
         @include flex(column,none,none,none,none);
-        /*display: flex;
-        flex-direction: column;*/
       }
       .social{
         .social_orden{
           @include flex(column,none,none,center,0.3125rem);
-          /*flex-direction: column;
-          align-items: center;
-          gap: 0.3125rem;*/
         }
       }
       .datafiscal{
@@ -164,15 +148,10 @@
       }
       .ubication{
         @include flex(column,none,none,none,none);
-        /*display: flex;
-        flex-direction: column;*/
       }
       .social{
         .social_orden{
           @include flex(column,none,none,center,0.3125rem);
-          /*flex-direction: column;
-          align-items: center;
-          gap: 0.3125rem;*/
         }
       }
       .datafiscal{
@@ -217,15 +196,10 @@
       }
       .ubication{
         @include flex(column,none,none,none,none);
-        /*display: flex;
-        flex-direction: column;*/
       }
       .social{
         .social_orden{
-          @include flex(column,none,none,center,03125rem);
-          /*flex-direction: column;
-          align-items: center;
-          gap: 0.3125rem;*/
+          @include flex(column,none,none,center,0.3125rem);
         }
       }
       .datafiscal{

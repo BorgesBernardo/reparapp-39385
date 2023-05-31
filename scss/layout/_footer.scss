@@ -9,9 +9,6 @@
     align-self: center;
     .navbar_footer{
       @include flex (column,none,none,none,0.3125rem);
-      /*display: flex;
-      flex-direction: column;
-      gap: 0.3125rem;*/
       padding-left: 1.25rem;
       list-style: none;
       li{
@@ -30,11 +27,6 @@
   }
   .ubication{
     @include flex (row,none,center,center,0.625rem);
-    /*display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 0.625rem;*/
     font-size: 1.25rem;
     font-family: $roboto;
     grid-column: 2 / 3;
@@ -53,10 +45,6 @@
     align-self: center;
     .social_orden{
       @include flex (row,none,none,center,0.3125rem);
-      /*display: flex;
-      flex-direction: row;
-      align-items: center;
-      gap: 0.3125rem;*/
       a{
         text-decoration: none;
       }
@@ -87,9 +75,6 @@
     grid-column: 4 / 5;
     justify-self: center;
     @include flex (column,none,flex-end,none,none);
-    /*display: flex;
-    flex-direction: column;
-    justify-content: flex-end;*/
     padding-left: 8.125rem;
     a{
       list-style: none;

@@ -1,7 +1,7 @@
 .servicios{
   .main_servicios{
-    height: 76vh;
     background-color:rgba(0, 0, 0, 0.643);
+    height: 76.4vh;
     h2{
       font-size: 1.875rem;
       font-family: $roboto;
@@ -9,12 +9,6 @@
     }
     .servicios_lista{
       @include flex (row,wrap,center,center,2.5rem);
-      /*display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
-      justify-content: center;
-      align-self: center;
-      gap: 2.5rem;*/
       margin: 2.1875rem 1.25rem 2.1875rem 1.25rem;
       div{
         section:hover{

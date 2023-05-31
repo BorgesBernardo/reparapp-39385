@@ -1,9 +1,5 @@
 .main_navbar{
   @include flex (row,none,space-between,center,none);
-  /*display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;*/
   margin: auto auto;
   padding: 1rem;
   width: 100%;
@@ -12,7 +8,7 @@
 }
 
 nav #toggle, nav label{
-    display: none;
+  display: none;
 }
 
 .reparapp{
@@ -28,10 +24,6 @@ nav #toggle, nav label{
 .navbar{
   list-style: none;
   @include flex (row,none,none,flex-end,0.625rem);
-  /*display: flex;
-  flex-direction: row;
-  align-items: flex-end;
-  gap: 0.625rem;*/
   font-size: 1.25rem;
   li{
     a{

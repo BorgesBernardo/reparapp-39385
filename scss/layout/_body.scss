@@ -8,44 +8,28 @@ body{
   background-image: $bg_index;
   background-size: cover;
   background-repeat: no-repeat;
-  @include grid(none,5.1rem 1fr 8.1rem,none,none);
-  /*display: grid;
-  grid-template-columns: none;
-  grid-template-rows: 5.1rem 1fr 8.1rem;*/
 }
 
 .servicios{
   background-image: $bg_servicios;
   background-size: cover;
   background-repeat: no-repeat;
-  display: grid;
-  grid-template-columns: none;
-  grid-template-rows: 5.1rem 1fr 8.1rem;
 }
 
 .contacto{
   background-image: $bg_contacto;
   background-size: cover;
   background-repeat: no-repeat;
-  display: grid;
-  grid-template-columns: none;
-  grid-template-rows: 5.1rem 1fr 8.6rem;
 }
 
 .nosotros{
   background-image: $bg_nosotros;
   background-size: cover;
   background-repeat: no-repeat;
-  display: grid;
-  grid-template-columns: none;
-  grid-template-rows: 5.1rem 1fr 8.6rem;
 }
 
 .perfil{
   background-image: $bg_perfil;
   background-size: cover;
   background-repeat: no-repeat;
-  display: grid;
-  grid-template-columns: none;
-  grid-template-rows: 5.1rem 1fr 8.1rem;
 }
