@@ -16,31 +16,31 @@ body {
 }
 
 .index {
-  background-image: url(../assets/img/portada-index.png);
+  background-image: url(../assets/img/portada-index-c.png);
   background-size: cover;
   background-repeat: no-repeat;
 }
 
 .servicios {
-  background-image: url(../assets/img/servicios/portada_servicios.png);
+  background-image: url(../assets/img/servicios/portada_servicios-c.png);
   background-size: cover;
   background-repeat: no-repeat;
 }
 
 .contacto {
-  background-image: url(../assets/img/contacto/portada_contacto.png);
+  background-image: url(../assets/img/contacto/portada_contacto-c.png);
   background-size: cover;
   background-repeat: no-repeat;
 }
 
 .nosotros {
-  background-image: url(../assets/img/nosotros/portada_nosotros.png);
+  background-image: url(../assets/img/nosotros/portada_nosotros-c.png);
   background-size: cover;
   background-repeat: no-repeat;
 }
 
 .perfil {
-  background-image: url(../assets/img/mi-perfil/portada_perfil.png);
+  background-image: url(../assets/img/mi-perfil/portada_perfil-c.png);
   background-size: cover;
   background-repeat: no-repeat;
 }
