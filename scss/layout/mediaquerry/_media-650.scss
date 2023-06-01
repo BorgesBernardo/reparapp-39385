@@ -15,12 +15,19 @@
   /* ----- Termina Index ----- */
   /* ----- Comienza Servicios ----- */
   .servicios{
-    grid-template-rows: 4.75rem 1fr 8.1rem;
+    grid-template-rows: 5.125rem 1fr 8.1rem;
     .main_servicios{
-      grid-template-rows: repeat(6, 8.5rem);
-      /*height: 81vh;*/
+      grid-template-rows: repeat(6, 7.475rem);
+      .servicios_lista{
+        grid-row: 2 / 5;
+      }
+      .section2service{
+        grid-row: 5 / 6;
+        margin-bottom: 1rem;
+      }
       .boton{
         grid-column: 1 / 4;
+        grid-row: 6 / 7;
       }
     }
     

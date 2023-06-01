@@ -59,9 +59,6 @@
 
   /* ----- Comienza Servicios ----- */
   .servicios{
-    .main_servicios{
-      height: 108vh;
-    }
     .footer_section{
       height: 32.6875rem;
       display: grid;
@@ -112,7 +109,6 @@
           .contenedor-formulario{
             .formulario{
               justify-content: center;
-              padding-left: 0.5rem;
               .nombre-apellido{
                 form{
                   input{
@@ -137,6 +133,7 @@
         }
       }
       .footer_section{
+        height: 32.6875rem;
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: auto auto auto;
@@ -183,6 +180,7 @@
         height: 170vh;
       }
       .footer_section{
+        height: 32.6875rem;
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: auto auto auto;
@@ -237,6 +235,7 @@
         }
       }
       .footer_section{
+        height: 32.6875rem;
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: auto auto auto;

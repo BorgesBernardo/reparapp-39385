@@ -8,50 +8,48 @@
         padding: 3rem 3rem;
         font-family: $roboto;
       }
-      .datos_contacto{
-        @include flex(row,wrap,space-evenly,center,none);
-        font-family: $roboto;
-        font-size: 1.5625rem;
-        margin: 3rem 0rem;
-        section{
-          .whatsapp{
-            display: flex;
-            flex-direction: row;
-            p{
-              padding-top: 0.75rem;
-              padding-left: 0.625rem;
-              margin-top: 0.625rem;
-              text-decoration: none;
-              font-family: $roboto;
+      .padre_contacto{
+        .datos_contacto{
+          @include flex(row,wrap,space-evenly,center,none);
+          font-family: $roboto;
+          font-size: 1.5625rem;
+            .whatsapp{
+              display: flex;
+              flex-direction: row;
+              p{
+                padding-top: 0.75rem;
+                padding-left: 0.625rem;
+                margin-top: 0.625rem;
+                text-decoration: none;
+                font-family: $roboto;
+              }
+              img{
+                width: 4.375rem;
+              }
             }
-            img{
-              width: 4.375rem;
+            .email{
+              display: flex;
+              flex-direction: row;
+              p{
+                padding-top: 0.75rem;
+                padding-left: 0.625rem;
+                font-family: $roboto;
+              }
+              img{
+                padding-bottom: 0.125rem;
+                width: 4.375rem;
+              }
             }
-          }
-          .email{
-            display: flex;
-            flex-direction: row;
-            p{
-              padding-top: 0.75rem;
-              padding-left: 0.625rem;
-              font-family: $roboto;
+            .instagram{
+              @extend .whatsapp;
+              p{
+                margin-top:0rem;
+              }
+              img{
+                width: 3.75rem;
+              }
             }
-            img{
-              padding-bottom: 0.125rem;
-              width: 4.375rem;
-            }
-          }
-          .instagram{
-            @extend .whatsapp;
-            p{
-              margin-top:0rem;
-            }
-            img{
-              width: 3.75rem;
-            }
-          }
         }
-        
       }
       .contenedor-formulario{
         margin: 2rem 0rem;

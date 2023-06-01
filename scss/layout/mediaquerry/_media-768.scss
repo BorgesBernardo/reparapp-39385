@@ -94,6 +94,8 @@
       }
     }
     .footer_section{
+      height: 15rem;
+      grid-template-rows: repeat(5, 3rem);
       .navbar_footer_main{
         .navbar_footer{
           gap: 0.9375rem;
@@ -121,24 +123,31 @@
   .nosotros{
     grid-template-rows: 5.096rem 1fr 8.6rem;
     .main_nosotros{
-      height: 97vh;
+      grid-template-rows: repeat(7, 8rem);
+      /*height: 97vh;*/
       h2{
         text-align: center;
+        align-self: center;
       }
-      .container_subtitulo{
-        margin: 0.625rem 1.875rem 0.625rem 1.875rem;
+      .conteiner_subtitulo{
+        align-self: center;
         h3{
           text-align: center;
         }
       }
       .texto_principal{
-          text-align: center;
+        grid-row: 3 / 7;
+        text-align: center;
+        align-self: center;
       }
       button{
-        margin: 1.25rem 1.25rem 1.875rem 1.25rem;
+        grid-row: 7 / 8;
+        margin: 1rem 6rem;
       }
     }
     .footer_section{
+      height: 15rem;
+      grid-template-rows: repeat(5, 3rem);
       .navbar_footer_main{
         .navbar_footer{
           gap: 0.9375rem;
@@ -187,6 +196,8 @@
       }
     }
     .footer_section{
+      height: 15rem;
+      grid-template-rows: repeat(5, 3rem);
       .navbar_footer_main{
         .navbar_footer{
           gap: 0.9375rem;
