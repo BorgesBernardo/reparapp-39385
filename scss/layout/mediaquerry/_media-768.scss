@@ -8,13 +8,11 @@
       }
       h3{
         text-align: center;
-        padding-left: 0rem;
-      }
-      .profesionales_lista{
-        margin-top: 4.25rem;
       }
     }
     .footer_section{
+      height: 15rem;
+      grid-template-rows: repeat(5, 3rem);
       .navbar_footer_main{
         .navbar_footer{
           gap: 0.9375rem;
@@ -53,6 +51,8 @@
       }
     }
     .footer_section{
+      height: 15rem;
+      grid-template-rows: repeat(5, 3rem);
       .navbar_footer_main{
         .navbar_footer{
           gap: 0.9375rem;

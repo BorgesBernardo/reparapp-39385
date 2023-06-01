@@ -1,8 +1,7 @@
-@media(max-width: 450px){
+@media(max-width: 478px){
   /* ----- Comienza Index ----- */
   .index{
     .main_index{
-      height: 175vh;
       h2{
         font-size: 2rem;
         text-align: center;
@@ -11,9 +10,8 @@
         text-align: center;
       }
       .profesionales_lista{
-        margin-top: 4rem;
         .contenedor-profesionales{
-          margin: 0rem 5rem;
+          padding-inline: 1.5rem;
         }
       }
     }

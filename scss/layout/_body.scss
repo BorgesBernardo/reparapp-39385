@@ -1,6 +1,7 @@
 body{
   background-color: $background-sitio;
   color: $color-texto;
+  width: 100%;
   height: 100vh;
 }
 
@@ -8,12 +9,17 @@ body{
   background-image: $bg_index;
   background-size: cover;
   background-repeat: no-repeat;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 5.125rem 1fr 8.5625rem;
 }
 
 .servicios{
   background-image: $bg_servicios;
   background-size: cover;
   background-repeat: no-repeat;
+  grid-template-columns: 1fr;
+  grid-template-rows: 5.125rem 1fr 8.5625rem;
 }
 
 .contacto{

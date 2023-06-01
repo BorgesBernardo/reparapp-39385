@@ -3,7 +3,7 @@
   margin: auto auto;
   padding: 1rem;
   width: 100%;
-  height: 50%;
+  height: 5.125rem;
   background-color: $background-sitio;
 }
 
@@ -25,6 +25,7 @@ nav #toggle, nav label{
   list-style: none;
   @include flex (row,none,none,flex-end,0.625rem);
   font-size: 1.25rem;
+  background-color: $background-sitio;
   li{
     a{
       text-decoration: none;
