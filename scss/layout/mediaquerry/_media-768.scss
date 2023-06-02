@@ -1,6 +1,7 @@
 @media(max-width:768px){
   /* ----- Comienza Index ----- */
   .index{
+    grid-template-rows: 5.125rem 1fr 15rem;
     .main_index{
       h2{
         font-size: 2.5rem;
@@ -9,6 +10,9 @@
       }
       h3{
         text-align: center;
+        transition: all 0.5s;
+        padding-left: 0rem;
+        align-self: center;
         transition: all 0.5s;
       }
     }
@@ -40,6 +44,7 @@
 
   /* ----- Comienza Servicios ----- */
   .servicios{
+    grid-template-rows: 5.125rem 1fr 15rem;
     .main_servicios{
       h2{
         text-align: center;
@@ -123,7 +128,7 @@
 
   /* ----- Comienza Nosotros ----- */
   .nosotros{
-    grid-template-rows: 5.096rem 1fr 8.6rem;
+    grid-template-rows: 5.125rem 1fr 15rem;
     .main_nosotros{
       h2{
         text-align: center;
@@ -176,6 +181,7 @@
   
   /* ----- Comienza Perfil ----- */
   .perfil{
+    grid-template-rows: 5.125rem 1fr 15rem;
     .main_perfil{
       grid-template-rows: repeat(6, 10rem);
       .foto_perfil{

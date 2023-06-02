@@ -104,10 +104,11 @@ header .marca {
   transition: all 0.5s;
   padding: 0rem 0rem 0rem 0.625rem;
   text-decoration: none;
+  font-family: "Roboto", sans-serif;
 }
 
 header .marca b {
-  font-weight: 400;
+  font-weight: bold;
   font-size: 2.1875rem;
   color: #f9b812;
   filter: invert(0);
@@ -121,6 +122,7 @@ header .navigation {
   align-items: center;
   gap: none;
   font-family: "Roboto", sans-serif;
+  padding-top: 0.8375rem;
 }
 
 header .navigation .checkbtn {
@@ -195,123 +197,6 @@ header .navigation ul .main-menu__link:focus::after {
   opacity: 1;
 }
 
-/*header .logo {
-  display: flex;
-  padding: 0.3125rem 0.625rem 0.3125rem 0.625rem;
-  border-radius: .625rem; 
-}
-
-header .logo a {
-  a{
-      display: block;
-      padding: 0rem 0rem 0.625rem 0rem;
-      transition: all 0.5s;
-    }
-}
-
-header .logo a img {
-  display: block;
-  height: 3rem;
-  width: 100%;
-  filter: invert(0);
-  transition: all 0.5s; 
-}
-
-header .marca {
-  position: relative;
-  align-self: center;
-  font-weight: 700;
-  font-size: 2.1875rem;
-  filter: invert(0);
-  transition: all 0.5s;
-  padding: 0rem 0rem 0rem 0.625rem;
-  text-decoration: none; 
-}
-
-header .marca b {
-  font-weight: 400;
-  font-size: 2.1875rem;
-  color: $color-secundario;
-  filter: invert(0); 
-}
-
-header .navigation {
-  display: flex;
-  flex-direction: row-reverse;
-  flex-wrap: none;
-  justify-content: space-between;
-  align-items: center;
-  gap: none;
-  font-family: $roboto;
-}
-
-header .navigation .checkbtn {
-  font-size: 3rem;
-  float: right;
-  height: 4.0625rem;
-  cursor: pointer;
-  display: none; 
-}
-
-header .navigation #check {
-  display: none; 
-}
-
-header .navigation ul {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: none;
-  justify-content: center;
-  align-items: center;
-  gap: none;
-  z-index: 1;
-  transition: all 0.5s;
-  float: right;
-  margin-right: 1.25rem;
-}
-
-header .navigation ul li {
-  display: flex;
-  padding-left: .75rem;
-  transition: 0.5s; 
-}
-
-header .navigation ul li a {
-  display: block;
-  font-size: 1.25rem;
-  list-style: none;
-  text-decoration: none;
-  color:$color-primario;
-  font-weight: bold; 
-  transition: all 0.2s;
-}
-
-header .navigation ul li a:hover {
-  color: #ededed; 
-}
-header .navigation ul .main-menu__link {
-  position: relative;
-  transition: all 0.4s; 
-}
-header .navigation ul ::after {
-  content: "";
-  height: 0.125rem;
-  width: 100%;
-  position: absolute;
-  right: 0rem;
-  bottom: -0.3125rem;
-  opacity: 0;
-  transition: all 0.35s ease;
-  pointer-events: none; 
-}
-header .navigation ul .active {
-  font-size: 1.25rem;
-  color: $color-secundario; 
-}
-header .navigation ul .main-menu__link:hover::after,
-header .navigation ul .main-menu__link:focus::after {
-  opacity: 1; 
-}*/
 /*.main_navbar{
   @include flex (row,none,space-between,center,none);
   margin: auto auto;
@@ -382,7 +267,7 @@ nav #toggle, nav label{
 .index .main_index h3 {
   grid-column: 1/3;
   grid-row: 2/3;
-  align-self: center;
+  align-self: end;
   font-size: 1.7rem;
   font-family: "Roboto", sans-serif;
   padding-left: 1.875rem;
@@ -905,6 +790,9 @@ nav #toggle, nav label{
 }
 @media (max-width: 768px) {
   /* ----- Comienza Index ----- */
+  .index {
+    grid-template-rows: 5.125rem 1fr 15rem;
+  }
   .index .main_index h2 {
     font-size: 2.5rem;
     text-align: center;
@@ -912,6 +800,9 @@ nav #toggle, nav label{
   }
   .index .main_index h3 {
     text-align: center;
+    transition: all 0.5s;
+    padding-left: 0rem;
+    align-self: center;
     transition: all 0.5s;
   }
   .index .footer_section {
@@ -945,6 +836,9 @@ nav #toggle, nav label{
   }
   /* ----- Termina Index ----- */
   /* ----- Comienza Servicios ----- */
+  .servicios {
+    grid-template-rows: 5.125rem 1fr 15rem;
+  }
   .servicios .main_servicios h2 {
     text-align: center;
   }
@@ -1027,7 +921,7 @@ nav #toggle, nav label{
   /* ----- Termina Contacto ----- */
   /* ----- Comienza Nosotros ----- */
   .nosotros {
-    grid-template-rows: 5.096rem 1fr 8.6rem;
+    grid-template-rows: 5.125rem 1fr 15rem;
   }
   .nosotros .main_nosotros h2 {
     text-align: center;
@@ -1082,6 +976,9 @@ nav #toggle, nav label{
   }
   /* ----- Termina Nosotros ----- */
   /* ----- Comienza Perfil ----- */
+  .perfil {
+    grid-template-rows: 5.125rem 1fr 15rem;
+  }
   .perfil .main_perfil {
     grid-template-rows: repeat(6, 10rem);
   }
@@ -1186,9 +1083,6 @@ nav #toggle, nav label{
 }
 @media (max-width: 650px) {
   /* ----- Comienza Index ----- */
-  .index {
-    grid-template-rows: 4.75rem 1fr 8.1rem;
-  }
   .index .main_index {
     grid-template-rows: repeat(7, 9rem);
   }
@@ -1219,9 +1113,6 @@ nav #toggle, nav label{
   }
   /* ----- Termina Servicios ----- */
   /* ----- Comienza Contacto ----- */
-  .contacto {
-    grid-template-rows: 4.75rem 1fr 8.1rem;
-  }
   .contacto .main_contacto {
     height: 103vh;
   }
@@ -1254,28 +1145,11 @@ nav #toggle, nav label{
   /* ----- Comienza Perfil ----- */
   /* ----- Termina Perfil ----- */
 }
-/*nav .menu{
-    width: 100%;
-    height: 0;
-    overflow: hidden;
-  }
-  .menu ul{
-    @include flex(column,none,none,center,none);
-  }
-
-  nav label{
-    display: inline-flex;
-    color: white;
-    cursor: pointer;
-  }
-  nav #toggle:checked ~ .menu{
-    height: 100%;
-  }
-  .nav_img{
-    padding-left: 50px;
-  } */
 @media (max-width: 549px) {
   /* ----- Comienza Index ----- */
+  .index {
+    grid-template-rows: 5.125rem 1fr 17rem;
+  }
   .index .main_index .profesionales_lista .contenedor-profesionales {
     margin: 0rem 0rem 0.125rem 0rem;
   }
@@ -1310,6 +1184,9 @@ nav #toggle, nav label{
   }
   /* ----- Termina Index ----- */
   /* ----- Comienza Servicios ----- */
+  .servicios {
+    grid-template-rows: 5.125rem 1fr 17rem;
+  }
   .servicios .main_servicios {
     grid-template-rows: repeat(9, 7rem);
   }
@@ -1400,6 +1277,9 @@ nav #toggle, nav label{
   }
   /* ----- Termina Contacto ----- */
   /* ----- Comienza Nosotros ----- */
+  .nosotros {
+    grid-template-rows: 5.125rem 1fr 17rem;
+  }
   .nosotros .main_nosotros {
     grid-template-rows: repeat(9, 7.5rem);
   }
@@ -1449,6 +1329,9 @@ nav #toggle, nav label{
   }
   /* ----- Termina Nosotros ----- */
   /* ----- Comienza Perfil ----- */
+  .perfil {
+    grid-template-rows: 5.125rem 1fr 17rem;
+  }
   .perfil .footer_section {
     height: 17rem;
     grid-template-rows: repeat(5, 3.5rem);
@@ -1607,9 +1490,12 @@ nav #toggle, nav label{
   /* ----- Termina Perfil ----- */
 }
 @media (max-width: 375px) {
+  header {
+    padding: 0rem 1.5625rem 0rem 0rem;
+  }
   /* ----- Comienza Index ----- */
   .index {
-    grid-template-rows: 4.8rem 1fr 32.7rem;
+    grid-template-rows: 5.125rem 1fr 32.6875rem;
   }
   .index .main_index {
     grid-template-rows: repeat(12, 8.5rem);
@@ -1665,6 +1551,9 @@ nav #toggle, nav label{
   }
   /* ----- Termina Index ----- */
   /* ----- Comienza Servicios ----- */
+  .servicios {
+    grid-template-rows: 5.125rem 1fr 32.6875rem;
+  }
   .servicios .footer_section {
     height: 32.6875rem;
     display: grid;
@@ -1764,6 +1653,9 @@ nav #toggle, nav label{
   }
   /* ----- Termina Contacto ----- */
   /* ----- Comienza Nosotros ----- */
+  .nosotros {
+    grid-template-rows: 5.125rem 1fr 32.6875rem;
+  }
   .nosotros .main_nosotros {
     grid-template-rows: repeat(11, 9.5rem);
   }
@@ -1821,11 +1713,14 @@ nav #toggle, nav label{
   }
   /* ----- Termina Nosotros ----- */
   /* ----- Comienza Perfil ----- */
+  .perfil {
+    grid-template-rows: 5.125rem 1fr 32.6875rem;
+  }
   .perfil .main_perfil {
     grid-template-rows: 8rem 8rem 8rem 8rem 8rem 8rem 9.3rem;
   }
   .perfil .main_perfil .foto_perfil img {
-    width: 18rem;
+    width: 16rem;
   }
   .perfil .main_perfil .datos_perfil {
     margin: 2rem 1.5625rem;

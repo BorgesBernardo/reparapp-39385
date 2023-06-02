@@ -1,6 +1,7 @@
 @media(max-width: 549px){
   /* ----- Comienza Index ----- */
   .index{
+    grid-template-rows: 5.125rem 1fr 17rem;
     .main_index{
       .profesionales_lista{
         .contenedor-profesionales{
@@ -37,6 +38,7 @@
 
   /* ----- Comienza Servicios ----- */
   .servicios{
+    grid-template-rows: 5.125rem 1fr 17rem;
     .main_servicios{
       grid-template-rows: repeat(9, 7rem);
       .servicios_lista{
@@ -139,6 +141,7 @@
 
   /* ----- Comienza Nosotros ----- */
   .nosotros{
+    grid-template-rows: 5.125rem 1fr 17rem;
     .main_nosotros{
       grid-template-rows: repeat(9, 7.5rem);
       .conteiner_subtitulo{
@@ -186,6 +189,7 @@
 
   /* ----- Comienza Perfil ----- */
   .perfil{
+    grid-template-rows: 5.125rem 1fr 17rem;
     .footer_section{
       height: 17rem;
       grid-template-rows: repeat(5, 3.5rem);

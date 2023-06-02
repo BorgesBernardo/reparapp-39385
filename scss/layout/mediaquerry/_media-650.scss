@@ -1,7 +1,6 @@
 @media(max-width:650px){
   /* ----- Comienza Index ----- */
   .index{
-    grid-template-rows: 4.75rem 1fr 8.1rem;
     .main_index{
       grid-template-rows: repeat(7, 9rem);
       .profesionales_lista{
@@ -36,7 +35,6 @@
 
   /* ----- Comienza Contacto ----- */
   .contacto{
-    grid-template-rows: 4.75rem 1fr 8.1rem;
     .main_contacto{
       height: 103vh;
       main{
@@ -92,27 +90,3 @@
   /* ----- Termina Perfil ----- */
 
 }
-
-
-
-
-/*nav .menu{
-    width: 100%;
-    height: 0;
-    overflow: hidden;
-  }
-  .menu ul{
-    @include flex(column,none,none,center,none);
-  }
-
-  nav label{
-    display: inline-flex;
-    color: white;
-    cursor: pointer;
-  }
-  nav #toggle:checked ~ .menu{
-    height: 100%;
-  }
-  .nav_img{
-    padding-left: 50px;
-  } */
