@@ -7,6 +7,7 @@
         font-size: 1.875rem;
         padding: 3rem 3rem;
         font-family: $roboto;
+        transition: all 0.5s;
       }
       .padre_contacto{
         .datos_contacto{
@@ -16,12 +17,14 @@
             .whatsapp{
               display: flex;
               flex-direction: row;
+              transition: all 0.5s;
               p{
                 padding-top: 0.75rem;
                 padding-left: 0.625rem;
                 margin-top: 0.625rem;
                 text-decoration: none;
                 font-family: $roboto;
+                transition: all 0.5s;
               }
               img{
                 width: 4.375rem;
@@ -30,6 +33,7 @@
             .email{
               display: flex;
               flex-direction: row;
+              transition: all 0.5s;
               p{
                 padding-top: 0.75rem;
                 padding-left: 0.625rem;

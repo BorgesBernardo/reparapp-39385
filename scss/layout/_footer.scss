@@ -3,8 +3,8 @@
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(5, 1.6875rem);
   background-color: $background-footer;
-  padding: 0rem 0rem;
   height: 8.5625rem;
+  transition: all 0.5s;
   .navbar_footer_main{
     grid-column: 1 / 2;
     grid-row: 1 / 6;

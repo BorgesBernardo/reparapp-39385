@@ -42,4 +42,7 @@ body{
   background-image: $bg_perfil;
   background-size: cover;
   background-repeat: no-repeat;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 5.125rem 1fr 8.5625rem;
 }

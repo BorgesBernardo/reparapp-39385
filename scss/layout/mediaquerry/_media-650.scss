@@ -40,9 +40,6 @@
     .main_contacto{
       height: 103vh;
       main{
-        .datos_contacto{
-          margin: 0rem 0rem;
-        }
         .contenedor-formulario{
           .formulario{
             .nombre-apellido{
@@ -76,23 +73,24 @@
 
   /* ----- Comienza Nosotros ----- */
   .nosotros{
-    grid-template-rows: 4.75rem 1fr 8.1rem;
     .main_nosotros{
-      height: 108vh;
+      grid-template-rows: repeat(9, 7rem);
       .texto_principal{
-        button{
-          font-size: 1.2rem;
-          margin: 1.25rem 1.25rem 1.875rem 1.25rem;
-        }
+        grid-row: 3 / 9;
+      }
+      button{
+        grid-row: 9 / 10;
+        font-size: 1rem;
+        margin: 1rem 4rem;
       }
     }
   }
   /* ----- Termina Nosotros ----- */
   
   /* ----- Comienza Perfil ----- */
-  .perfil{
-    grid-template-rows: 4.75rem 1fr 8.1rem;
-  }
+
+  /* ----- Termina Perfil ----- */
+
   /* ----- Comienza Menu Hamburguesa ----- */
   nav .menu{
     width: 100%;

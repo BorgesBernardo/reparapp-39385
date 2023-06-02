@@ -2,8 +2,7 @@
   .main_nosotros{
     display: grid;
     grid-template-columns: repeat(3,1fr);
-    grid-template-rows: repeat(7, 7rem);
-    /*height: 76.4vh;*/
+    grid-template-rows: repeat(6, 7.4rem);
     background-color:rgba(0, 0, 0, 0.773);
     h2{
       grid-column: 1 / 4;
@@ -11,6 +10,7 @@
       padding: 1.875rem 1.25rem 1.25rem 1.25rem;
       font-size: 1.875rem;
       font-family: $roboto;
+      transition: all 0.5s;
     }
     .conteiner_subtitulo{
       grid-column: 1 / 4;
@@ -20,6 +20,7 @@
         font-family: $roboto;
         color: $color-selectiontext;
         text-align: center;
+        transition: all 0.5s;
       }
     }
     .texto_principal{
@@ -27,26 +28,28 @@
       grid-row: 3 / 6;
       font-size: 1.2rem;
       font-family: $roboto;
-      margin: 0rem 3rem;
+      margin: 0rem 5rem;
       .parrafos{
         display: flex;
         flex-direction: column;
         gap: 15px;
+        transition: all 0.5s;
       }
     }
     button{
       grid-column: 1 / 4;
-      grid-row: 6 / 8;
+      grid-row: 6 / 7;
       font-weight: bold;
       justify-items: center;
       text-align: center;
       background-color: $color-botones;
       padding: 1.25rem 1.25rem;
-      margin: 3rem 5rem;
+      margin: 1rem 13rem;
       font-size: 1.5rem;
       border-style: none;
       border-radius: 1.25rem;
       color:$background-sitio;
+      transition: all 0.5s;
     }
     button:hover{
       transform: scale(1.1);

@@ -14,10 +14,12 @@ nav #toggle, nav label{
 .reparapp{
   font-family: $roboto;
   font-size: 2rem;
+  transition: all 0.5s;
   b{
     color: $color-selectiontext;
     font-weight: bold;
     font-family: $roboto;
+    transition: all 0.5s;
   }
 }
 

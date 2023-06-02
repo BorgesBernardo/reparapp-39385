@@ -5,9 +5,11 @@
       h2{
         font-size: 2rem;
         text-align: center;
+        transition: all 0.5s;
       }
       h3{
         text-align: center;
+        transition: all 0.5s;
       }
       .profesionales_lista{
         .contenedor-profesionales{
@@ -22,7 +24,6 @@
   .servicios{
     .main_servicios{ 
       grid-template-rows: repeat(9, 7rem);
-      /*height: 100vh;*/
       h2{
         align-self: center;
       }
@@ -102,14 +103,22 @@
 
   /* ----- Comienza Nosotros ----- */
   .nosotros{
-    grid-template-rows: 4.75rem 1fr 8.1rem;
     .main_nosotros{
-      height: 138vh;
+      grid-template-rows: repeat(10, 9rem);
+      .conteiner_subtitulo{
+        margin:0rem 3rem;
+      }
       .texto_principal{
-        button{
-          font-size: 1.2rem;
-          margin: 1.25rem 1.25rem 1.875rem 1.25rem;
+        grid-row: 3 / 10;
+        margin: 0rem 1.5rem;
+        .parrafos{
+          gap: 25px;
         }
+      }
+      button{
+          grid-row: 10 / 11;
+          font-size: 1rem;
+          margin: 1.25rem 1.25rem 1.875rem 1.25rem;
       }
     }
   }
@@ -118,11 +127,9 @@
   /* ----- Comienza Perfil ----- */
   .perfil{
     .main_perfil{
-      height: 98vh;
-      grid-template-rows: 8rem 8rem 8rem 8rem 8rem 8rem 7rem;
       .foto_perfil{
-        padding: 0rem 0rem;
-        margin-top: 0.9375rem;
+        grid-row: 1 / 5;
+        align-self: center;
         img{
           width: 20rem;
         }

@@ -53,6 +53,9 @@ body {
   background-image: url(../assets/img/mi-perfil/portada_perfil-c.png);
   background-size: cover;
   background-repeat: no-repeat;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 5.125rem 1fr 8.5625rem;
 }
 
 .main_navbar {
@@ -76,11 +79,13 @@ nav #toggle, nav label {
 .reparapp {
   font-family: "Roboto", sans-serif;
   font-size: 2rem;
+  transition: all 0.5s;
 }
 .reparapp b {
   color: #f9b812;
   font-weight: bold;
   font-family: "Roboto", sans-serif;
+  transition: all 0.5s;
 }
 
 .navbar {
@@ -122,6 +127,7 @@ nav #toggle, nav label {
   padding: 1.8rem 1.25rem 0rem 1.25rem;
   align-self: center;
   text-align: start;
+  transition: all 0.5s;
 }
 .index .main_index h2 b {
   color: #f9b812;
@@ -135,7 +141,7 @@ nav #toggle, nav label {
   font-size: 1.7rem;
   font-family: "Roboto", sans-serif;
   padding-left: 1.875rem;
-  /*margin:2rem 0rem 2.5rem 0rem;*/
+  transition: all 0.5s;
 }
 .index .main_index .profesionales_lista {
   grid-column: 1/4;
@@ -149,6 +155,7 @@ nav #toggle, nav label {
   grid-template-rows: none;
   padding-inline: 2.5rem;
   gap: 1.5rem;
+  transition: all 0.5s;
 }
 .index .main_index .profesionales_lista .profesional {
   text-align: center;
@@ -176,7 +183,6 @@ nav #toggle, nav label {
   grid-template-rows: repeat(6, 7.475rem);
   background-color: rgba(0, 0, 0, 0.643);
   background-color: rgba(0, 0, 0, 0.643);
-  /*height: 76.4vh;*/
 }
 .servicios .main_servicios h2 {
   grid-column: 1/3;
@@ -184,6 +190,7 @@ nav #toggle, nav label {
   font-size: 1.875rem;
   font-family: "Roboto", sans-serif;
   padding: 2.5rem 1.25rem;
+  transition: all 0.5s;
 }
 .servicios .main_servicios .servicios_lista {
   grid-column: 1/4;
@@ -191,23 +198,23 @@ nav #toggle, nav label {
   justify-content: center;
   align-self: center;
   padding-inline: 2.5rem;
-  /*margin: 2.1875rem 1.25rem 2.1875rem 1.25rem;*/
+  transition: all 0.5s;
 }
 .servicios .main_servicios .servicios_lista section {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(8rem, 1fr));
   grid-template-rows: none;
   gap: 1.5rem;
-  /*section:hover{
-    transform: scale(1.3);
-    transition: 0.5s;
-  }*/
 }
 .servicios .main_servicios .servicios_lista section div {
   justify-self: center;
 }
 .servicios .main_servicios .servicios_lista section div img {
   width: 8rem;
+}
+.servicios .main_servicios .servicios_lista section section:hover {
+  transform: scale(1.3);
+  transition: 0.5s;
 }
 .servicios .main_servicios .section2service {
   grid-column: 1/4;
@@ -220,9 +227,11 @@ nav #toggle, nav label {
 .servicios .main_servicios .section2service h3 {
   font-family: "Roboto", sans-serif;
   margin: 0.625rem 0rem;
+  transition: all 0.5s;
 }
 .servicios .main_servicios .section2service p {
   font-family: "Roboto", sans-serif;
+  transition: all 0.5s;
 }
 .servicios .main_servicios .boton {
   margin: 2.5rem 0rem 0.625rem 0rem;
@@ -239,6 +248,7 @@ nav #toggle, nav label {
   padding: 0.9375rem 0.9375rem;
   font-family: "Roboto", sans-serif;
   font-weight: bold;
+  transition: all 0.5s;
 }
 .servicios .main_servicios .boton button:hover {
   transform: scale(1.1);
@@ -253,6 +263,7 @@ nav #toggle, nav label {
   font-size: 1.875rem;
   padding: 3rem 3rem;
   font-family: "Roboto", sans-serif;
+  transition: all 0.5s;
 }
 .contacto .main_contacto main .padre_contacto .datos_contacto {
   display: flex;
@@ -267,6 +278,7 @@ nav #toggle, nav label {
 .contacto .main_contacto main .padre_contacto .datos_contacto .whatsapp, .contacto .main_contacto main .padre_contacto .datos_contacto .instagram {
   display: flex;
   flex-direction: row;
+  transition: all 0.5s;
 }
 .contacto .main_contacto main .padre_contacto .datos_contacto .whatsapp p, .contacto .main_contacto main .padre_contacto .datos_contacto .instagram p {
   padding-top: 0.75rem;
@@ -274,6 +286,7 @@ nav #toggle, nav label {
   margin-top: 0.625rem;
   text-decoration: none;
   font-family: "Roboto", sans-serif;
+  transition: all 0.5s;
 }
 .contacto .main_contacto main .padre_contacto .datos_contacto .whatsapp img, .contacto .main_contacto main .padre_contacto .datos_contacto .instagram img {
   width: 4.375rem;
@@ -281,6 +294,7 @@ nav #toggle, nav label {
 .contacto .main_contacto main .padre_contacto .datos_contacto .email {
   display: flex;
   flex-direction: row;
+  transition: all 0.5s;
 }
 .contacto .main_contacto main .padre_contacto .datos_contacto .email p {
   padding-top: 0.75rem;
@@ -356,8 +370,7 @@ nav #toggle, nav label {
 .nosotros .main_nosotros {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(7, 7rem);
-  /*height: 76.4vh;*/
+  grid-template-rows: repeat(6, 7.4rem);
   background-color: rgba(0, 0, 0, 0.773);
 }
 .nosotros .main_nosotros h2 {
@@ -366,6 +379,7 @@ nav #toggle, nav label {
   padding: 1.875rem 1.25rem 1.25rem 1.25rem;
   font-size: 1.875rem;
   font-family: "Roboto", sans-serif;
+  transition: all 0.5s;
 }
 .nosotros .main_nosotros .conteiner_subtitulo {
   grid-column: 1/4;
@@ -376,32 +390,35 @@ nav #toggle, nav label {
   font-family: "Roboto", sans-serif;
   color: #f9b812;
   text-align: center;
+  transition: all 0.5s;
 }
 .nosotros .main_nosotros .texto_principal {
   grid-column: 1/4;
   grid-row: 3/6;
   font-size: 1.2rem;
   font-family: "Roboto", sans-serif;
-  margin: 0rem 3rem;
+  margin: 0rem 5rem;
 }
 .nosotros .main_nosotros .texto_principal .parrafos {
   display: flex;
   flex-direction: column;
   gap: 15px;
+  transition: all 0.5s;
 }
 .nosotros .main_nosotros button {
   grid-column: 1/4;
-  grid-row: 6/8;
+  grid-row: 6/7;
   font-weight: bold;
   justify-items: center;
   text-align: center;
   background-color: #f9b812;
   padding: 1.25rem 1.25rem;
-  margin: 3rem 5rem;
+  margin: 1rem 13rem;
   font-size: 1.5rem;
   border-style: none;
   border-radius: 1.25rem;
   color: #012935;
+  transition: all 0.5s;
 }
 .nosotros .main_nosotros button:hover {
   transform: scale(1.1);
@@ -409,10 +426,9 @@ nav #toggle, nav label {
 }
 
 .perfil .main_perfil {
-  height: 76.4vh;
   display: grid;
-  grid-template-columns: auto 1fr;
-  grid-template-rows: repeat(4, 10.57rem);
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(6, 7.475rem);
   background-color: rgba(0, 0, 0, 0.773);
   font-family: "Roboto", sans-serif;
 }
@@ -420,13 +436,14 @@ nav #toggle, nav label {
   grid-column: 1/2;
   grid-row: 1/5;
   padding: 1.25rem 3.75rem;
+  transition: all 0.5s;
 }
 .perfil .main_perfil .foto_perfil img {
   width: 25rem;
 }
 .perfil .main_perfil .datos_perfil {
-  grid-column: 2/3;
-  grid-row: 1/4;
+  grid-column: 2/4;
+  grid-row: 2/5;
   justify-content: center;
   text-decoration: none;
   display: flex;
@@ -436,6 +453,7 @@ nav #toggle, nav label {
   align-items: none;
   gap: 1.25rem;
   font-size: 1.25rem;
+  transition: all 0.5s;
 }
 .perfil .main_perfil .datos_perfil .datos {
   font-weight: bold;
@@ -443,10 +461,10 @@ nav #toggle, nav label {
 }
 .perfil .main_perfil .cerrar_sesion {
   grid-column: 2/3;
-  grid-row: 3/4;
+  grid-row: 5/6;
   align-self: center;
-  margin-bottom: 0rem;
   width: 11.25rem;
+  transition: all 0.5s;
 }
 .perfil .main_perfil .cerrar_sesion button {
   font-size: 1.25rem;
@@ -467,8 +485,8 @@ nav #toggle, nav label {
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(5, 1.6875rem);
   background-color: #04627E;
-  padding: 0rem 0rem;
   height: 8.5625rem;
+  transition: all 0.5s;
 }
 .footer_section .navbar_footer_main {
   grid-column: 1/2;
@@ -569,10 +587,12 @@ nav #toggle, nav label {
     grid-column: 1/4;
     justify-content: center;
     font-size: 3rem;
+    transition: all 0.5s;
   }
   .index .main_index h3 {
     grid-column: 1/4;
     justify-content: center;
+    transition: all 0.5s;
   }
   .index .main_index .profesionales_lista {
     gap: 1rem;
@@ -609,10 +629,10 @@ nav #toggle, nav label {
   /* ----- Termina Contacto ----- */
   /* ----- Comienza Nosotros----- */
   .nosotros .main_nosotros {
-    grid-template-rows: repeat(7, 7.5rem);
-    /*height: 86vh;*/
+    grid-template-rows: repeat(6, 10rem);
   }
   .nosotros .main_nosotros button {
+    align-self: center;
     margin: 3rem 5rem;
   }
   .nosotros .footer_section .datafiscal {
@@ -624,9 +644,7 @@ nav #toggle, nav label {
     padding: 1.25rem 2rem;
   }
   .perfil .main_perfil .datos_perfil {
-    padding-left: 0rem;
     margin-right: 1rem;
-    margin-bottom: 0rem;
   }
   .perfil .main_perfil .cerrar_sesion {
     margin-top: 3.5rem;
@@ -641,9 +659,11 @@ nav #toggle, nav label {
   .index .main_index h2 {
     font-size: 2.5rem;
     text-align: center;
+    transition: all 0.5s;
   }
   .index .main_index h3 {
     text-align: center;
+    transition: all 0.5s;
   }
   .index .footer_section {
     height: 15rem;
@@ -760,16 +780,13 @@ nav #toggle, nav label {
   .nosotros {
     grid-template-rows: 5.096rem 1fr 8.6rem;
   }
-  .nosotros .main_nosotros {
-    grid-template-rows: repeat(7, 8rem);
-    /*height: 97vh;*/
-  }
   .nosotros .main_nosotros h2 {
     text-align: center;
     align-self: center;
   }
   .nosotros .main_nosotros .conteiner_subtitulo {
     align-self: center;
+    margin: 0rem 2.5rem;
   }
   .nosotros .main_nosotros .conteiner_subtitulo h3 {
     text-align: center;
@@ -778,10 +795,12 @@ nav #toggle, nav label {
     grid-row: 3/7;
     text-align: center;
     align-self: center;
+    margin: 0rem 2rem;
   }
   .nosotros .main_nosotros button {
     grid-row: 7/8;
-    margin: 1rem 6rem;
+    font-size: 1.2rem;
+    margin: 1rem 2rem;
   }
   .nosotros .footer_section {
     height: 15rem;
@@ -815,26 +834,24 @@ nav #toggle, nav label {
   /* ----- Termina Nosotros ----- */
   /* ----- Comienza Perfil ----- */
   .perfil .main_perfil {
-    height: 112vh;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 10rem 10rem 10rem 10rem 8rem 8rem 7rem;
+    grid-template-rows: repeat(6, 10rem);
   }
   .perfil .main_perfil .foto_perfil {
-    grid-column: 1/3;
+    grid-column: 1/4;
     justify-self: center;
   }
   .perfil .main_perfil .datos_perfil {
-    grid-column: 1/3;
+    grid-column: 1/4;
     grid-row: 5/7;
     justify-content: center;
     text-align: center;
   }
   .perfil .main_perfil .cerrar_sesion {
-    grid-column: 1/3;
+    grid-column: 2/3;
     grid-row: 7/8;
     justify-self: center;
     text-align: center;
-    margin: 0.625rem 0rem;
+    margin: 0.625rem 0rem 1.5rem 0rem;
   }
   .perfil .footer_section {
     height: 15rem;
@@ -908,9 +925,6 @@ nav #toggle, nav label {
   .contacto .main_contacto {
     height: 103vh;
   }
-  .contacto .main_contacto main .datos_contacto {
-    margin: 0rem 0rem;
-  }
   .contacto .main_contacto main .contenedor-formulario .formulario .nombre-apellido form input {
     padding: 0.625rem 20rem 0.625rem 0.3125rem;
   }
@@ -925,21 +939,20 @@ nav #toggle, nav label {
   }
   /* ----- Termina Contacto ----- */
   /* ----- Comienza Nosotros ----- */
-  .nosotros {
-    grid-template-rows: 4.75rem 1fr 8.1rem;
-  }
   .nosotros .main_nosotros {
-    height: 108vh;
+    grid-template-rows: repeat(9, 7rem);
   }
-  .nosotros .main_nosotros .texto_principal button {
-    font-size: 1.2rem;
-    margin: 1.25rem 1.25rem 1.875rem 1.25rem;
+  .nosotros .main_nosotros .texto_principal {
+    grid-row: 3/9;
+  }
+  .nosotros .main_nosotros button {
+    grid-row: 9/10;
+    font-size: 1rem;
+    margin: 1rem 4rem;
   }
   /* ----- Termina Nosotros ----- */
   /* ----- Comienza Perfil ----- */
-  .perfil {
-    grid-template-rows: 4.75rem 1fr 8.1rem;
-  }
+  /* ----- Termina Perfil ----- */
   /* ----- Comienza Menu Hamburguesa ----- */
   nav .menu {
     width: 100%;
@@ -1005,7 +1018,6 @@ nav #toggle, nav label {
   /* ----- Comienza Servicios ----- */
   .servicios .main_servicios {
     grid-template-rows: repeat(9, 7rem);
-    /*height: 105vh;*/
   }
   .servicios .main_servicios .servicios_lista {
     grid-row: 2/7;
@@ -1094,15 +1106,23 @@ nav #toggle, nav label {
   }
   /* ----- Termina Contacto ----- */
   /* ----- Comienza Nosotros ----- */
-  .nosotros {
-    grid-template-rows: 4.75rem 1fr 8.1rem;
-  }
   .nosotros .main_nosotros {
-    height: 120vh;
+    grid-template-rows: repeat(9, 7.5rem);
   }
-  .nosotros .main_nosotros .texto_principal button {
-    font-size: 1.2rem;
-    margin: 1.25rem 1.25rem 1.875rem 1.25rem;
+  .nosotros .main_nosotros .conteiner_subtitulo {
+    margin: 0rem 0.5rem;
+  }
+  .nosotros .main_nosotros .conteiner_subtitulo .subtitulo {
+    font-size: 1.5rem;
+  }
+  .nosotros .main_nosotros .texto_principal {
+    grid-row: 3/9;
+    margin: 0rem 1rem;
+  }
+  .nosotros .main_nosotros button {
+    grid-row: 9/10;
+    font-size: 1rem;
+    margin: 1rem 1rem;
   }
   .nosotros .footer_section {
     height: 17rem;
@@ -1171,9 +1191,11 @@ nav #toggle, nav label {
   .index .main_index h2 {
     font-size: 2rem;
     text-align: center;
+    transition: all 0.5s;
   }
   .index .main_index h3 {
     text-align: center;
+    transition: all 0.5s;
   }
   .index .main_index .profesionales_lista .contenedor-profesionales {
     padding-inline: 1.5rem;
@@ -1182,7 +1204,6 @@ nav #toggle, nav label {
   /* ----- Comienza Servicios ----- */
   .servicios .main_servicios {
     grid-template-rows: repeat(9, 7rem);
-    /*height: 100vh;*/
   }
   .servicios .main_servicios h2 {
     align-self: center;
@@ -1259,25 +1280,29 @@ nav #toggle, nav label {
   }
   /* ----- Termina Contacto ----- */
   /* ----- Comienza Nosotros ----- */
-  .nosotros {
-    grid-template-rows: 4.75rem 1fr 8.1rem;
-  }
   .nosotros .main_nosotros {
-    height: 138vh;
+    grid-template-rows: repeat(10, 9rem);
   }
-  .nosotros .main_nosotros .texto_principal button {
-    font-size: 1.2rem;
+  .nosotros .main_nosotros .conteiner_subtitulo {
+    margin: 0rem 3rem;
+  }
+  .nosotros .main_nosotros .texto_principal {
+    grid-row: 3/10;
+    margin: 0rem 1.5rem;
+  }
+  .nosotros .main_nosotros .texto_principal .parrafos {
+    gap: 25px;
+  }
+  .nosotros .main_nosotros button {
+    grid-row: 10/11;
+    font-size: 1rem;
     margin: 1.25rem 1.25rem 1.875rem 1.25rem;
   }
   /* ----- Termina Nosotros ----- */
   /* ----- Comienza Perfil ----- */
-  .perfil .main_perfil {
-    height: 98vh;
-    grid-template-rows: 8rem 8rem 8rem 8rem 8rem 8rem 7rem;
-  }
   .perfil .main_perfil .foto_perfil {
-    padding: 0rem 0rem;
-    margin-top: 0.9375rem;
+    grid-row: 1/5;
+    align-self: center;
   }
   .perfil .main_perfil .foto_perfil img {
     width: 20rem;
@@ -1340,7 +1365,6 @@ nav #toggle, nav label {
     grid-row: 4/5;
     margin: 1.25rem 0rem;
     justify-items: center;
-    padding-left: 0rem;
   }
   .index .footer_section .datafiscal section a p {
     text-align: center;
@@ -1447,7 +1471,19 @@ nav #toggle, nav label {
   /* ----- Termina Contacto ----- */
   /* ----- Comienza Nosotros ----- */
   .nosotros .main_nosotros {
-    height: 170vh;
+    grid-template-rows: repeat(11, 9.5rem);
+  }
+  .nosotros .main_nosotros .texto_principal {
+    grid-row: 3/11;
+    margin: 0rem 1.5rem;
+  }
+  .nosotros .main_nosotros .texto_principal .parrafos {
+    gap: 25px;
+  }
+  .nosotros .main_nosotros button {
+    grid-row: 11/12;
+    font-size: 1.2rem;
+    margin: 1rem 1rem;
   }
   .nosotros .footer_section {
     height: 32.6875rem;

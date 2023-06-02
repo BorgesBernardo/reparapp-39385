@@ -1,26 +1,27 @@
 .perfil{
   .main_perfil{
-    height: 76.4vh;
     display: grid;
-    grid-template-columns: auto 1fr;
-    grid-template-rows: repeat(4, 10.57rem);
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(6, 7.475rem);
     background-color:rgba(0, 0, 0, 0.773);
     font-family: $roboto;
     .foto_perfil{
       grid-column: 1 / 2;
       grid-row: 1 / 5;
       padding: 1.25rem 3.75rem;
+      transition: all 0.5s;
       img{
         width: 25rem;
       }
     }
     .datos_perfil{
-      grid-column: 2 / 3;
-      grid-row: 1 / 4;
+      grid-column: 2 / 4;
+      grid-row: 2 / 5;
       justify-content: center;
       text-decoration: none;
       @include flex(column,none,none,none,1.25rem);    
       font-size: 1.25rem;
+      transition: all 0.5s;
       .datos{
         font-weight: bold;
         text-decoration: underline;
@@ -28,10 +29,10 @@
     }
     .cerrar_sesion{
       grid-column: 2 / 3;
-      grid-row: 3 / 4;
+      grid-row: 5 / 6;
       align-self: center;
-      margin-bottom: 0rem;
       width: 11.25rem;
+      transition: all 0.5s;
       button{
         font-size: 1.25rem;
         background-color: $color-botones;

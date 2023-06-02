@@ -12,6 +12,7 @@
       padding: 1.8rem 1.25rem 0rem 1.25rem;
       align-self: center;
       text-align:start;
+      transition: all 0.5s;
       b{
         color: $color-selectiontext;
         font-weight: bold;
@@ -25,7 +26,7 @@
       font-size: 1.7rem;
       font-family: $roboto;
       padding-left: 1.875rem;
-      /*margin:2rem 0rem 2.5rem 0rem;*/
+      transition: all 0.5s;
     }
     .profesionales_lista{
       grid-column: 1 / 4;
@@ -38,6 +39,7 @@
         grid-template-rows: none;
         padding-inline: 2.5rem;
         gap:1.5rem;
+        transition: all 0.5s;
       }
       .profesional{
         text-align: center;
