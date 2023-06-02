@@ -58,61 +58,306 @@ body {
   grid-template-rows: 5.125rem 1fr 8.5625rem;
 }
 
-.main_navbar {
+header {
+  margin-top: 0;
+  margin-bottom: 0;
+  width: 100%;
+  height: 5.3125rem;
+  padding: 0 1.5625rem;
   display: flex;
-  flex-direction: row;
+  flex-direction: none;
   flex-wrap: none;
   justify-content: space-between;
   align-items: center;
   gap: none;
+  position: relative;
+  background-color: #012935;
+  transition: all 0.5s;
+}
+
+header .logo {
+  display: flex;
+  padding: 0.3125rem 0.625rem 0.3125rem 0.625rem;
+  border-radius: 0.625rem;
+}
+
+header .logo a a {
+  display: block;
+  padding: 0rem 0rem 0.625rem 0rem;
+  transition: all 0.5s;
+}
+
+header .logo a img {
+  display: block;
+  height: 3rem;
+  width: 100%;
+  filter: invert(0);
+  transition: all 0.5s;
+}
+
+header .marca {
+  position: relative;
+  align-self: center;
+  font-weight: 700;
+  font-size: 2.1875rem;
+  filter: invert(0);
+  transition: all 0.5s;
+  padding: 0rem 0rem 0rem 0.625rem;
+  text-decoration: none;
+}
+
+header .marca b {
+  font-weight: 400;
+  font-size: 2.1875rem;
+  color: #f9b812;
+  filter: invert(0);
+}
+
+header .navigation {
+  display: flex;
+  flex-direction: row-reverse;
+  flex-wrap: none;
+  justify-content: space-between;
+  align-items: center;
+  gap: none;
+  font-family: "Roboto", sans-serif;
+}
+
+header .navigation .checkbtn {
+  font-size: 3rem;
+  float: right;
+  height: 4.0625rem;
+  cursor: pointer;
+  display: none;
+}
+
+header .navigation #check {
+  display: none;
+}
+
+header .navigation ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: none;
+  justify-content: center;
+  align-items: center;
+  gap: none;
+  z-index: 1;
+  transition: all 0.5s;
+  float: right;
+  margin-right: 1.25rem;
+}
+
+header .navigation ul li {
+  display: flex;
+  padding-left: 0.75rem;
+  transition: 0.5s;
+}
+
+header .navigation ul li a {
+  display: block;
+  font-size: 1.25rem;
+  list-style: none;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  transition: all 0.2s;
+}
+
+header .navigation ul li a:hover {
+  color: #ededed;
+}
+
+header .navigation ul .main-menu__link {
+  position: relative;
+  transition: all 0.4s;
+}
+
+header .navigation ul ::after {
+  content: "";
+  height: 0.125rem;
+  width: 100%;
+  position: absolute;
+  right: 0rem;
+  bottom: -0.3125rem;
+  opacity: 0;
+  transition: all 0.35s ease;
+  pointer-events: none;
+}
+
+header .navigation ul .active {
+  font-size: 1.25rem;
+  color: #f9b812;
+}
+
+header .navigation ul .main-menu__link:hover::after,
+header .navigation ul .main-menu__link:focus::after {
+  opacity: 1;
+}
+
+/*header .logo {
+  display: flex;
+  padding: 0.3125rem 0.625rem 0.3125rem 0.625rem;
+  border-radius: .625rem; 
+}
+
+header .logo a {
+  a{
+      display: block;
+      padding: 0rem 0rem 0.625rem 0rem;
+      transition: all 0.5s;
+    }
+}
+
+header .logo a img {
+  display: block;
+  height: 3rem;
+  width: 100%;
+  filter: invert(0);
+  transition: all 0.5s; 
+}
+
+header .marca {
+  position: relative;
+  align-self: center;
+  font-weight: 700;
+  font-size: 2.1875rem;
+  filter: invert(0);
+  transition: all 0.5s;
+  padding: 0rem 0rem 0rem 0.625rem;
+  text-decoration: none; 
+}
+
+header .marca b {
+  font-weight: 400;
+  font-size: 2.1875rem;
+  color: $color-secundario;
+  filter: invert(0); 
+}
+
+header .navigation {
+  display: flex;
+  flex-direction: row-reverse;
+  flex-wrap: none;
+  justify-content: space-between;
+  align-items: center;
+  gap: none;
+  font-family: $roboto;
+}
+
+header .navigation .checkbtn {
+  font-size: 3rem;
+  float: right;
+  height: 4.0625rem;
+  cursor: pointer;
+  display: none; 
+}
+
+header .navigation #check {
+  display: none; 
+}
+
+header .navigation ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: none;
+  justify-content: center;
+  align-items: center;
+  gap: none;
+  z-index: 1;
+  transition: all 0.5s;
+  float: right;
+  margin-right: 1.25rem;
+}
+
+header .navigation ul li {
+  display: flex;
+  padding-left: .75rem;
+  transition: 0.5s; 
+}
+
+header .navigation ul li a {
+  display: block;
+  font-size: 1.25rem;
+  list-style: none;
+  text-decoration: none;
+  color:$color-primario;
+  font-weight: bold; 
+  transition: all 0.2s;
+}
+
+header .navigation ul li a:hover {
+  color: #ededed; 
+}
+header .navigation ul .main-menu__link {
+  position: relative;
+  transition: all 0.4s; 
+}
+header .navigation ul ::after {
+  content: "";
+  height: 0.125rem;
+  width: 100%;
+  position: absolute;
+  right: 0rem;
+  bottom: -0.3125rem;
+  opacity: 0;
+  transition: all 0.35s ease;
+  pointer-events: none; 
+}
+header .navigation ul .active {
+  font-size: 1.25rem;
+  color: $color-secundario; 
+}
+header .navigation ul .main-menu__link:hover::after,
+header .navigation ul .main-menu__link:focus::after {
+  opacity: 1; 
+}*/
+/*.main_navbar{
+  @include flex (row,none,space-between,center,none);
   margin: auto auto;
   padding: 1rem;
   width: 100%;
   height: 5.125rem;
-  background-color: #012935;
+  background-color: $background-sitio;
 }
 
-nav #toggle, nav label {
+nav #toggle, nav label{
   display: none;
 }
 
-.reparapp {
-  font-family: "Roboto", sans-serif;
+.reparapp{
+  font-family: $roboto;
   font-size: 2rem;
   transition: all 0.5s;
-}
-.reparapp b {
-  color: #f9b812;
-  font-weight: bold;
-  font-family: "Roboto", sans-serif;
-  transition: all 0.5s;
+  b{
+    color: $color-selectiontext;
+    font-weight: bold;
+    font-family: $roboto;
+    transition: all 0.5s;
+  }
 }
 
-.navbar {
+.navbar{
   list-style: none;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: none;
-  justify-content: none;
-  align-items: flex-end;
-  gap: 0.625rem;
+  @include flex (row,none,none,flex-end,0.625rem);
   font-size: 1.25rem;
-  background-color: #012935;
-}
-.navbar li a {
-  text-decoration: none;
-  color: white;
-  font-family: "Roboto", sans-serif;
-}
-.navbar li a .foto-perfil {
-  width: 3.125rem;
-  vertical-align: bottom;
-}
-.navbar .selectionbotton {
-  color: #f9b812;
-  font-family: "Roboto", sans-serif;
-}
-
+  background-color: $background-sitio;
+  li{
+    a{
+      text-decoration: none;
+      color: $color-texto;
+      font-family: $roboto;
+      .foto-perfil{
+        width: 3.125rem;
+        vertical-align: bottom;
+      }
+    }
+  }
+  .selectionbotton{
+    color: $color-selectiontext;
+    font-family: $roboto;
+  }
+}*/
 .index .main_index {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -629,9 +874,13 @@ nav #toggle, nav label {
   /* ----- Termina Contacto ----- */
   /* ----- Comienza Nosotros----- */
   .nosotros .main_nosotros {
-    grid-template-rows: repeat(6, 10rem);
+    grid-template-rows: repeat(7, 8rem);
+  }
+  .nosotros .main_nosotros .texto_principal {
+    grid-row: 3/7;
   }
   .nosotros .main_nosotros button {
+    grid-row: 7/8;
     align-self: center;
     margin: 3rem 5rem;
   }
@@ -883,6 +1132,57 @@ nav #toggle, nav label {
     align-self: center;
   }
   /* ----- Termina Perfil ----- */
+  /* ----- Comienza Menu Hamburguesa ----- */
+  header .logo a img {
+    height: 2.8rem;
+    transition: all 0.5s;
+  }
+  header .marca {
+    font-size: 35px;
+    transition: all 0.5s;
+  }
+  header .marca b {
+    font-size: 35px;
+    transition: all 0.5s;
+  }
+  header .navigation .menu {
+    flex-direction: column;
+    background-color: #f9b812;
+    -webkit-backdrop-filter: blur(25px);
+    backdrop-filter: blur(25px);
+    list-style: none;
+    transition: all 0.5s;
+  }
+  header .navigation .checkbtn {
+    display: block;
+    position: sticky;
+  }
+  header .navigation ul {
+    position: absolute;
+    width: 100%;
+    height: 210px;
+    top: 84px;
+    left: -105%;
+    text-align: center;
+    transition: all 0.5s;
+  }
+  header .navigation ul li {
+    display: block;
+    margin: 10px 0;
+    line-height: 20px;
+  }
+  header .navigation ul li a {
+    font-size: 20px;
+    color: #000;
+  }
+  header .navigation ul li .active {
+    font-size: 20px;
+    transition: all 0.5s;
+  }
+  header .navigation #check:checked ~ ul {
+    left: 0;
+  }
+  /* ----- Termina Menu Hamburguesa ----- */
 }
 @media (max-width: 650px) {
   /* ----- Comienza Index ----- */
@@ -953,33 +1253,27 @@ nav #toggle, nav label {
   /* ----- Termina Nosotros ----- */
   /* ----- Comienza Perfil ----- */
   /* ----- Termina Perfil ----- */
-  /* ----- Comienza Menu Hamburguesa ----- */
-  nav .menu {
+}
+/*nav .menu{
     width: 100%;
     height: 0;
     overflow: hidden;
   }
-  .menu ul {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: none;
-    justify-content: none;
-    align-items: center;
-    gap: none;
+  .menu ul{
+    @include flex(column,none,none,center,none);
   }
-  nav label {
+
+  nav label{
     display: inline-flex;
     color: white;
     cursor: pointer;
   }
-  nav #toggle:checked ~ .menu {
+  nav #toggle:checked ~ .menu{
     height: 100%;
   }
-  .nav_img {
+  .nav_img{
     padding-left: 50px;
-  }
-  /* ----- Termina Menu Hamburguesa ----- */
-}
+  } */
 @media (max-width: 549px) {
   /* ----- Comienza Index ----- */
   .index .main_index .profesionales_lista .contenedor-profesionales {

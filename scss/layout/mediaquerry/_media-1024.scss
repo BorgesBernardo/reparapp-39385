@@ -76,8 +76,12 @@
   /* ----- Comienza Nosotros----- */
   .nosotros{
     .main_nosotros{
-      grid-template-rows: repeat(6, 10rem);
+      grid-template-rows: repeat(7, 8rem);
+      .texto_principal{
+        grid-row: 3 / 7;
+      }
       button{
+        grid-row: 7 / 8;
         align-self: center;
         margin: 3rem 5rem;
       }
