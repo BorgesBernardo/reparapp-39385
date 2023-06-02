@@ -32,15 +32,19 @@
     grid-row: 1 / 6;
     align-self: center;
     justify-content: center;
-    @include flex (row,none,center,center,0.625rem);
+    @include flex (column,none,center,center,0.625rem);
     font-size: 1.25rem;
     font-family: $roboto;
-    p{
+    text-align: center;
+    a{
+      text-decoration: none;
       font-family: $roboto;
+      color: $color-texto;
+      img{
+        width: 2.5rem;
+      }
     }
-    img{
-      width: 2.5rem;
-    }
+
   }
   .social{
     grid-column: 3 / 4;
