@@ -4,6 +4,9 @@
 
 <img src="./assets/img-readme.png">
 
+<img src="./assets/img-readme2.png">
+
+
 #### Tecnologías Usadas
 
 - Figma
