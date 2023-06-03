@@ -41,7 +41,7 @@
   /* ----- Comienza Contacto ----- */
   .contacto{
     .main_contacto{ 
-      height: 130vh;
+      height: 135vh;
       main{
         h2{
           text-align: center;
@@ -106,7 +106,7 @@
     .main_nosotros{
       grid-template-rows: repeat(10, 9rem);
       .conteiner_subtitulo{
-        margin:0rem 3rem;
+        margin:0rem 2rem;
       }
       .texto_principal{
         grid-row: 3 / 10;

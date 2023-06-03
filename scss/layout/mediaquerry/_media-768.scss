@@ -86,6 +86,7 @@
   /* ----- Comienza Contacto ----- */
   .contacto{
     .main_contacto{
+      height: 85vh;
       main{
         h2{
           text-align: center;
@@ -242,7 +243,7 @@
   }
   header .navigation .menu {
     flex-direction: column;
-    background-color: $color-secundario;
+    background-color: $background-footer;
     -webkit-backdrop-filter: blur(25px);
     backdrop-filter: blur(25px);
     list-style: none;
@@ -268,7 +269,7 @@
   }
   header .navigation ul li a {
     font-size: 20px;
-    color: #000; 
+    color: $color-texto; 
   }
   header .navigation ul li .active {
     font-size: 20px;

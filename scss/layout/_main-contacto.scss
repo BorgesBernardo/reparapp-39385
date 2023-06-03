@@ -9,52 +9,6 @@
         font-family: $roboto;
         transition: all 0.5s;
       }
-      .padre_contacto{
-        .datos_contacto{
-          @include flex(row,wrap,space-evenly,center,none);
-          font-family: $roboto;
-          font-size: 1.5625rem;
-            .whatsapp{
-              display: flex;
-              flex-direction: row;
-              transition: all 0.5s;
-              p{
-                padding-top: 0.75rem;
-                padding-left: 0.625rem;
-                margin-top: 0.625rem;
-                text-decoration: none;
-                font-family: $roboto;
-                transition: all 0.5s;
-              }
-              img{
-                width: 4.375rem;
-              }
-            }
-            .email{
-              display: flex;
-              flex-direction: row;
-              transition: all 0.5s;
-              p{
-                padding-top: 0.75rem;
-                padding-left: 0.625rem;
-                font-family: $roboto;
-              }
-              img{
-                padding-bottom: 0.125rem;
-                width: 4.375rem;
-              }
-            }
-            .instagram{
-              @extend .whatsapp;
-              p{
-                margin-top:0rem;
-              }
-              img{
-                width: 3.75rem;
-              }
-            }
-        }
-      }
       .contenedor-formulario{
         margin: 2rem 0rem;
         .formulario{
@@ -115,6 +69,53 @@
               box-shadow: 0.125rem 0.125rem 1.875rem rgba(255, 255, 255, 0.377);
             }
           }
+        }
+      }
+      .padre_contacto{
+        margin-top: 10rem;
+        .datos_contacto{
+          @include flex(row,wrap,space-evenly,center,none);
+          font-family: $roboto;
+          font-size: 1.5625rem;
+            .whatsapp{
+              display: flex;
+              flex-direction: row;
+              transition: all 0.5s;
+              p{
+                padding-top: 0.75rem;
+                padding-left: 0.625rem;
+                margin-top: 0.625rem;
+                text-decoration: none;
+                font-family: $roboto;
+                transition: all 0.5s;
+              }
+              img{
+                width: 4.375rem;
+              }
+            }
+            .email{
+              display: flex;
+              flex-direction: row;
+              transition: all 0.5s;
+              p{
+                padding-top: 0.75rem;
+                padding-left: 0.625rem;
+                font-family: $roboto;
+              }
+              img{
+                padding-bottom: 0.125rem;
+                width: 4.375rem;
+              }
+            }
+            .instagram{
+              @extend .whatsapp;
+              p{
+                margin-top:0rem;
+              }
+              img{
+                width: 3.75rem;
+              }
+            }
         }
       }
     }

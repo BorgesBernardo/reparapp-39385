@@ -68,6 +68,9 @@
             }
           }
         }
+        .padre_contacto{
+          margin-top: 5rem;
+        }
       }
     }
   }
@@ -77,8 +80,12 @@
   .nosotros{
     .main_nosotros{
       grid-template-rows: repeat(7, 8rem);
+      .contenedor_subtitulo{
+        align-self: center;
+      }
       .texto_principal{
         grid-row: 3 / 7;
+        align-self: center;
       }
       button{
         grid-row: 7 / 8;
